@@ -38,19 +38,17 @@ a{
 	a:active{
 		color: #397e88;
 	}
+
 /** Headers **/
 h1 {
 	font-size: 32px;
 }
-
 h3 {
 	font-size: 24px;
 }
-
 h1, h2 {
 	font-family: Arvo;
 }
-
 h3, h4, h5, h6 {
 	font-family: Ostrich R;
 }
@@ -62,31 +60,34 @@ nav{
 		position: fixed;
 		background-color: black;
 	}
-#menu{
-		position: relative;
-		vertical-align: middle;
-		margin-left: 5%;
-	}
-	.home{
-		position: relative;
-		bottom: 6px;
-	}
 @media (min-width: 720px) {
-	.menu-item{
-		float: right;
-		margin-right: 5%;
+	#menu{
+			position: relative;
+			vertical-align: middle;
+			margin-left: 5%;
+		}
+		.home{
+			position: relative;
+			bottom: 6px;
+		}
+		.menu-item{
+			float: right;
+			margin-right: 5%;
 
-	}
-	#menu-icon{
-		display: none;
-	}
+		}
+		#menu-icon{
+			display: none;
+		}
 }
-
 @media (max-width: 720px) {
-	.menu-item{
-		display: none;
+	#menu{
+		text-align: center;
 	}
-	#menu-icon{
-	}
+
+		.menu-item{
+			display: none;
+		}
+		#menu-icon{
+		}
 }
 /*** Body ***/
