@@ -2,33 +2,96 @@
 /*		Defaults 	  */
 /**********************/
 /** Fonts **/
+@font-face{
+	font-family: Arvo;
+	src: url('static/fonts/Arvo-Regular.ttf');
+}
+@font-face{
+	font-family: Ostrich R;
+	src: url('static/fonts/Ostrich Regular.ttf');
+}
+@font-face{
+	font-family: Ostrich B;
+	src: url('static/fonts/Ostrich Black.ttf');
+}
+@font-face{
+	font-family: Open Sans L;
+	src: url('static/fonts/OpenSans-Light.ttf');
+}
+@font-face{
+	font-family: Open Sans R;
+	src: url('static/fonts/OpenSans-Regular.ttf');
+}
+/** Shortcuts **/
+.inline{
+	display: inline-block;
+}
 
 /** Links **/
 a{
+	color: #ffffff;
 	text-decoration: none;
 }
 	a:hover{
-		color: ;
+		color: #61a099;
 	}
 	a:active{
-		color: ;
-	}
-	a:visited{
-		color: ;
+		color: #397e88;
 	}
 /** Headers **/
-h1{
+h1 {
+	font-size: 32px;
+}
+
+h3 {
 	font-size: 24px;
 }
 
+h1, h2 {
+	font-family: Arvo;
+}
+
+h3, h4, h5, h6 {
+	font-family: Ostrich R;
+}
 
 /*** Navigation ***/
-/*@media only screen and (min-width:1824px) */
+@media (min-width: 720px)
 	nav{
 		width: 100%;
-		height: 50px;
+		height: 75px;
 		position: fixed;
-		background-color: #cccccc;
+		background-color: black;
+	}
+	#menu{
+		position: relative;
+		vertical-align: middle;
+		margin-left: 5%;
+	}
+	.menu-item{
+		float: right;
+		margin-right: 5%;
+
+	}
+	.home{
+		position: relative;
+		bottom: 6px;
+	}
+	#menu-icon{
+		display: hidden;
+	}
+
+@media (max-width: 720px)
+	nav{
+		width: 100%;
+		height: 75px;
+		position: fixed;
+		background-color: black;
+	}
+	#menu-item{
+		display: hidden;
+	}
+	#menu-icon{
 	}
 
 /*** Body ***/
