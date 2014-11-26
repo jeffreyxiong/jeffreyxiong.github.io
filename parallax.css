@@ -28,32 +28,20 @@ nav{
 	left: 0;
 }
 .base{
-	transform: translateZ(-1px) scale(2);
-	-webkit-transform: translateZ(-1px) scale(2);
+	transform: translateZ(-20px) scale(21);
+	-webkit-transform: translateZ(-20px) scale(21);
+	background: url("static/images/cover.jpg") no-repeat center center;
+	z-index: 4;
 }
 .slow{
 	transform: translateZ(-2px) scale(3);
 	-webkit-transform: translateZ(-2px) scale(3);
+	background-color: #3075a5;
+	z-index: -1;
 }
 .slower{
 	transform: translateZ(-3px) scale(4);
 	-webkit-transform: translateZ(-3px) scale(4);
-}
-#sec-0{
-	z-index: 3;
-}
-#sec-1{
-	z-index: 2;
-}
-#sec-2{
-	z-index: 1;
-}
-#sec-0 .layer{
-	background: url("static/images/cover.jpg") no-repeat center center;
-}
-#sec-1 .layer{
-	background-color: #3075a5;
-}
-#sec-2 .layer{
 	background-color: #6bb141;
+	z-index: 2;
 }
