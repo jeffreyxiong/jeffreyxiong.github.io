@@ -1,11 +1,7 @@
 /* Based on tutorial: http://keithclark.co.uk/articles/pure-css-parallax-websites/ */
-nav{
-	z-index: 10;
-}
-
 .parallax{
-	perspective: 1px;
-	-webkit-perspective: 1px;
+	perspective: 300px;
+	-webkit-perspective: 300px;
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -13,7 +9,7 @@ nav{
 
 .parallax-group{
 	position: relative;
-	height: 100vh;
+	height: 500px;
 	transition: transform 0.5s;
 	-webkit-transition: transform 0.5s;
 	transform-style: preserve-3d;
@@ -22,26 +18,31 @@ nav{
 
 .layer{
 	position: absolute;
+	/*height: 500px;*/
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 }
 .base{
-	transform: translateZ(-20px) scale(21);
-	-webkit-transform: translateZ(-20px) scale(21);
-	background: url("static/images/cover.jpg") no-repeat center center;
-	z-index: 4;
+	transform: translateZ(0px);
+	-webkit-transform: translateZ(0px);
+}
+.fast{
+	transform: translateZ(90px) scale(.7);
+	-webkit-transform: translateZ(90px) scale(.7);
+}
+.faster{
+	transform: translateZ(180px) scale(.4);
+	-webkit-transform: translateZ(180px) scale(.4);
 }
 .slow{
-	transform: translateZ(-2px) scale(3);
-	-webkit-transform: translateZ(-2px) scale(3);
-	background-color: #3075a5;
-	z-index: -1;
+	transform: translateZ(-300px) scale(2);
+	-webkit-transform: translateZ(-300px) scale(2);
 }
 .slower{
-	transform: translateZ(-3px) scale(4);
-	-webkit-transform: translateZ(-3px) scale(4);
-	background-color: #6bb141;
-	z-index: 2;
+	transform: translateZ(-6px) scale(3);
+	-webkit-transform: translateZ(-6px) scale(3);
 }
+
+

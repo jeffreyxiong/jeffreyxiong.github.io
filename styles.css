@@ -62,6 +62,7 @@ nav{
 		height: 50px;
 		position: fixed;
 		background-color: rgba(0, 0, 0, 0.7);
+		z-index: 10;
 	}
 @media (min-width: 720px) {
 	#menu{
@@ -103,8 +104,23 @@ nav{
 /************************/
 /* 		   Body 		*/
 /************************/
-
-
+#sec-2{
+	background-color: #3075a5;
+	z-index: 5;
+}
+#sec-3{
+	background-color: #000000;
+}
+.sec-img{
+	background: url("static/images/cover.jpg") no-repeat center center;
+}
+.sec-text{
+	width: 180px;
+	height: 100px;
+	position: relative;
+	top: 200px;
+	left: 5%;
+}
 
 
 
