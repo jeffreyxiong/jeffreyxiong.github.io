@@ -67,7 +67,7 @@ nav{
 		background-color: rgba(255, 255, 255, 0.9);
 		z-index: 9;
 	}
-@media (min-width: 721px) {
+@media (min-width: 640px) {
 	#menu{
 			position: relative;
 			vertical-align: middle;
@@ -86,7 +86,7 @@ nav{
 			display: none;
 		}
 }
-@media (max-width: 720px) {
+@media (max-width: 640px) {
 	#menu{
 		position: relative;
 		margin-left: 5%;
@@ -121,7 +121,7 @@ nav{
 	background: url("static/images/cover.jpg") no-repeat center center;
 }
 .info{
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.8);
 	z-index: 10;
 	position: relative;
 	top: 520px;
