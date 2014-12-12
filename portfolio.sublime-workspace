@@ -4,20 +4,72 @@
 		"selected_items":
 		[
 			[
-				"bor",
-				"border"
+				"fo",
+				"footer	Tag"
 			],
 			[
-				"mar",
-				"margin-left"
-			],
-			[
-				"font",
-				"font-size"
+				"back",
+				"background-size"
 			],
 			[
 				"marg",
 				"margin-left"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"bo",
+				"border-left"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"BACK",
+				"background-color"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"tran",
+				"translateZ"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"font",
+				"font-size"
 			],
 			[
 				"in",
@@ -29,10 +81,6 @@
 			],
 			[
 				"backgr",
-				"background-color"
-			],
-			[
-				"backg",
 				"background-color"
 			],
 			[
@@ -48,10 +96,6 @@
 				"dialog-modal"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"min",
 				"min-width"
 			],
@@ -60,20 +104,8 @@
 				"text-align"
 			],
 			[
-				"fon",
-				"font-style"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
 				"margin",
 				"margin-right"
-			],
-			[
-				"margi",
-				"margin-top"
 			]
 		]
 	},
@@ -83,7 +115,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1194,
+				"buffer_size": 1674,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "normal.css",
+			"settings":
+			{
+				"buffer_size": 990,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,8 +131,17 @@
 			"file": "styles.css",
 			"settings":
 			{
-				"buffer_size": 1320,
+				"buffer_size": 1397,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts.js",
+			"settings":
+			{
+				"buffer_size": 537,
+				"line_ending": "Unix",
+				"name": "// Styles"
 			}
 		}
 	],
@@ -123,10 +172,19 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io"
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/static"
 	],
 	"file_history":
 	[
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/mobile.css",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/static/images/cover.svg",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/normalize.css",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/parallax.css",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/styles.css",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/static/images/menu.svg",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/test.html",
+		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/CNAME",
 		"/Users/Jeffrey/Documents/College/'14 Fall/COMP 140/WriteUp 6 - Sports Analytics.txt",
 		"/Users/Jeffrey/Documents/College/'14 Fall/COMP 140/WriteUp 5 - QR Code.txt",
 		"/Users/Jeffrey/Documents/Projects/Web Portfolio/normalize.css",
@@ -202,6 +260,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"66b",
+			"66",
+			"body",
 			"inline",
 			"block",
 			"h",
@@ -279,15 +340,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1194,
+						"buffer_size": 1674,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								1329,
+								1329
 							]
 						],
 						"settings":
@@ -296,7 +357,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 263.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -304,19 +365,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "styles.css",
+					"file": "normal.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1320,
+						"buffer_size": 990,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1091,
-								1091
+								946,
+								946
 							]
 						],
 						"settings":
@@ -325,10 +386,68 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 818.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								950,
+								950
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// Styles",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

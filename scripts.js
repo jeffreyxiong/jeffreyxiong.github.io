@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 	// Cache window object
 	$window = $(window);
-	$('div[data-type="background"]').each(function(){
+	$('section[data-type="background"]').each(function(){
 		// Assign parallax object
 		var $bg = $(this);
 		// Custom scroll
