@@ -4,6 +4,7 @@
 body, html{
 	margin: 0;
 	padding: 0;
+	background-color: #5694BA;
 }
 /** Color Palette **/
 /* 
@@ -37,6 +38,10 @@ Grey: #49494B
 	font-family: Open Sans R;
 	src: url('static/fonts/OpenSans-Regular.ttf');
 }
+@font-face{
+	font-family: Montserrat;
+	src: url('static/fonts/Montserrat-Regular.otf');
+}
 /** Shortcuts **/
 .inline{
 	display: inline;
@@ -44,14 +49,14 @@ Grey: #49494B
 
 /** Links **/
 a{
-	color: #000000;
+	color: #49494B;
 	text-decoration: none;
 }
 	a:hover{
-		color: #61a099;
+		color: #27536E;
 	}
 	a:active{
-		color: #397e88;
+		color: #5694BA;
 	}
 
 /** Text Styles **/
@@ -83,6 +88,25 @@ nav{
 		z-index: 9;
 	}
 
+/************************/
+/* 		Navigation		*/
+/************************/
+.section-m{
+	width: 100%;
+	height: 450px;
+	position: relative;
+	top: 50px;
+}
+	.title span{
+		font-family: Open Sans R;
+		font-size: 24px;
+	}
+.section-s{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: 50px;
+}
 /************************/
 /* 		  Footer 		*/
 /************************/

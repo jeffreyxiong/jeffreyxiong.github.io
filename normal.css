@@ -1,20 +1,21 @@
 /* Stylesheet -- Normal Viewport */
+
 /************************/
 /* 		Navigation		*/
 /************************/
 #menu{
 	position: relative;
-	vertical-align: middle;
-	margin-left: 5%;
 	bottom: 5px;
+	margin-left: 5%;
+	vertical-align: middle;
 }
 #menu-home{
 	position: relative;
 	top: 8px;
 }
 .menu-item{
-	float: right;
 	margin-right: 5%;
+	float: right;
 }
 #menu-icon{
 	display: none;
@@ -23,12 +24,7 @@
 /************************/
 /* 		   Body 		*/
 /************************/
-.section{
-	width: 100%;
-	height: 500px;
-	position: relative;
-	top: 50px;
-}
+
 #drwg{
 	max-width: 100%;
 	height: 500px;
@@ -37,24 +33,74 @@
 	background: url("static/images/cover.svg") no-repeat center center;
 	background-size: cover;
 }
-#drwg-overlay{
-	position: absolute;
-	height: 500px;
-	width: 100%;
-	background: url("static/images/cover-overlay.svg") no-repeat center center;
-	background-size: cover;
+.overlay{
+		position: relative;
+		display: block;
+	}
+@media (min-width: 1000px){
+	#o1{
+		top: 180px;
+		left: 50%;
+		margin-left: -510px;
+	}
+	#o2{
+		top: -120px;
+		left: 50%;
+		margin-left: -440px;
+	}
+	#o3{
+		top: -220px;
+		left: 50%;
+		margin-left: 180px;
+	}
+	#o4{
+		top: -280px;
+		left: 50%;
+		margin-left: 380px;
+	}
 }
+@media (max-width: 1000px){
+	#o1{
+		display: none;
+	}
+	#o2{
+		top: 60px;
+		left: 50%;
+		margin-left: -440px;
+	}
+	#o3{
+		top: -40px;
+		left: 50%;
+		margin-left: 180px;
+	}
+	#o4{
+		display: none;
+	}
+}
+#intro{
+	background-color: #49494B;
+}
+	.intro-text{
+		padding-top: 30px;
+		color: #E6E7E8;
+	}	
+	.intro-title{
+		width: 200px;
+		height: 35px;
+		padding: 10px;
+		margin: 0 auto;
+		text-align: center;
+		background-color: #58585B;
+	}
+		.intro-title span{
+			font-family: Montserrat;
+			font-size: 24px;
+			color: #FFFFFF;
+		}
 #design{
 	background-color: #A14A4A;
 	position: relative;
 }
-	.section-img{
-		width: 20%;
-		position: absolute;
-		left: 5%;
-		bottom: 0px;
-	}
 
-#develop{
-	background-color: #597586;
-}
+
+
