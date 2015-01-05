@@ -80,10 +80,6 @@
 #intro{
 	background-color: #49494B;
 }
-	.intro-text{
-		padding-top: 30px;
-		color: #E6E7E8;
-	}	
 	.intro-title{
 		width: 200px;
 		height: 35px;
@@ -97,6 +93,10 @@
 			font-size: 24px;
 			color: #FFFFFF;
 		}
+	.intro-text{
+		padding-top: 30px;
+		color: #E6E7E8;
+	}	
 #design{
 	background-color: #A14A4A;
 	position: relative;
