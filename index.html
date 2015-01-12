@@ -10,6 +10,7 @@ Last Edit: 11/02/14
 
 <head>
 	<title> [Under Construction] </title>
+	<!-- So Meta --> 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width initial-scale=1">
@@ -19,6 +20,7 @@ Last Edit: 11/02/14
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" media="(min-width: 720px)" href="normal.css">
 	<link rel="stylesheet" media="(max-width: 720px)" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="">
 	<!-- jQuery & JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="scripts.js"></script>
@@ -30,37 +32,62 @@ Last Edit: 11/02/14
 		<div id="menu">
 			<h1 class="inline" id="menu-home"><a href="" class="">JEFFREY XIONG</a></h1>
 			<h3 class="inline menu-item"><a href="" class="">Work</a></h3>
-			<h3 class="inline menu-item"><a href="#about" class="">About Me</a></h3>
+			<h3 class="inline menu-item"><a href="#bio" class="">About Me</a></h3>
 			<a href="#"><img src="static/images/menu.svg" alt="Menu" id="menu-icon"></a>
 		</div>
 	</nav>
-	<!-- Sections -->
-	<div id="content">
-		<section id="drwg" data-type="background" data-speed="-2">
-			<img id="o1" class="overlay" src="static/images/overlay-01.svg">
-			<img id="o2" class="overlay" src="static/images/overlay-02.svg">
-			<img id="o3" class="overlay" src="static/images/overlay-03.svg">
-			<img id="o4" class="overlay" src="static/images/overlay-04.svg">
-		</section>
 
-		<section id="intro" class="section-m" data-type="background" data-speed="2">
-			<div class="intro-text">
-				<div class="intro-title">	
-					<span> HELLO WORLD. </span>
-				</div>
-				<p> I am a student at Rice University pursuing: </p>
-				<ul>
-					<li>B.S. in Computer Science</li>
-					<li>Minors in Neuroscience, Financial Computation and Modeling</li>
-				</ul>
+	<!-- Illustration -->
+	<section id="drwg" data-type="background" data-speed="-2">
+		<img id="o1" class="overlay" src="static/images/overlay-01.svg">
+		<img id="o2" class="overlay" src="static/images/overlay-02.svg">
+		<img id="o3" class="overlay" src="static/images/overlay-03.svg">
+		<img id="o4" class="overlay" src="static/images/overlay-04.svg">
+	</section>
+
+	<!-- Content -->
+	<section id="bio">
+		<div id="bio-title">	
+			<span class="subtitle"> HELLO </span><span class="title"> WORLD </span>
+		</div>
+		<div id="bio-text">
+			<p> I am a design-driven student, developer, and artist. My other passions include playing piano, reading science fiction, doodling, and swimming. </p>
+			<span class="icon school"> Rice University </span>
+			<span class="icon class"> Class of 2018 </span>
+			<span class="icon major"> B.S. Computer Science </span>
+		</div>
+	</section>
+
+	<section id="love" class="section-m">
+		<div id="love-title">
+			<span class="subtitle"> THIS IS WHAT I LOVE. </span>
+		</div>
+		<div id="love-design" class="love-box">
+			<img src="static/images/love-design.png" width="280" height="200">
+			<div class="love-text">
+				<p> Colors, shapes, and words. Arranged prettily. </p>
 			</div>
-		</section>
+		</div>
+		<div id="love-code" class="love-box">
+			<img src="static/images/love-code.png" width="280" height="200">
+			<div class="love-text">
+				<p> I charm Pythons, drink Java, and objectify C. </p>
+			</div>
+		</div>
+		<div id="love-photo" class="love-box" effect>
+			<img src="static/images/love-photo.png" width="280" height="200">
+			<div class="caption">
+				<span>PHOTO<span class="subsubtitle">GRAPHY</span></span>
+			</div>
+			<div class="love-text">
+				<p> Cute animals, cool people, curious places. </p>
+			</div>
+		</div>
+	</section>
 
-		<section id="design" class="section-m">
-		</section>
-	</div>
+	<!-- Footer -->
 	<footer>
-		
+
 	</footer>
 
 </body>
