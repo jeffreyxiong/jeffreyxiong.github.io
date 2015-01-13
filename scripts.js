@@ -3,42 +3,28 @@
 
 $(document).ready(function(){
 
-	//	PARALLAX SCROLL 	
-
-		// Cache window object
+	//	PARALLAX SCROLL
+	//	media check
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+		var device = true
+	}
+	var media = window.matchMedia("(min-width: 720px)")
+	if (media.matches || !device) {
+		// cache window object
 		$window = $(window);
 		$('section[data-type="background"]').each(function(){
-			// Assign parallax object
+			// assign parallax object
 			var $bg = $(this);
-			// Custom scroll
+			// custom scroll
 			$(window).scroll(function(){
-				// Scroll speed
+				// scroll speed
 				var y = -($window.scrollTop() / $bg.data('speed'));
-				// Background position
+				// background position
 				var coords = '50%' + y + 'px'
-				// Move background
+				// move background
 				$bg.css({backgroundPosition: coords});
 			}); // end scroll
 		}); // end parallax
-
-	// // HOVER EFFECTS
-
-	// 	// Love Box
-	// 	$(".love-img").hover(function(){
-	// 		$(this).css({"-webkit-filter": "grayscale(80%)"})
-	// 	}, function(){
-	// 		$(this).css({"-webkit-filter": "grayscale(0%)"})
-	// 	});
-	// 	$(".caption").hover(function(){
-	// 		$(".love-img").css({"-webkit-filter": "grayscale(80%)"})
-	// 	}, function(){
-	// 		$(".love-img").css({"-webkit-filter": "grayscale(0%)"})
-	// 	});
+	}
 
 });
-
-////	HOVER EFFECTS
-	
-
-
--->
