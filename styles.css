@@ -231,6 +231,17 @@ section{
 		-webkit-flex-flow: row wrap;
 
 	}
+	@supports (not (-webkit-flex-flow: row wrap) ){
+		.flex{
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: space-around;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-flex-direction: row;
+			flex-direction: row;
+		}
+	}
 		.love-box{
 			width: 280px;
 			height: auto;
@@ -245,16 +256,16 @@ section{
 			position: absolute;
 			top: 80px;
 		}
-		.caption-title{
-			width: 260px;
-			height: auto;
-			padding: 10px;
-			font-family: Open Sans SB;
-			font-size: 16px;
-			text-align: center;
-			background-color: #FFFFFF;
-			display: inline-block;
-		}
+			.caption-title{
+				width: 260px;
+				height: auto;
+				padding: 10px;
+				font-family: Open Sans SB;
+				font-size: 16px;
+				text-align: center;
+				background-color: #FFFFFF;
+				display: inline-block;
+			}
 
 /************************/
 /* 		  Footer 		*/
@@ -267,6 +278,6 @@ footer{
 	top: 50px;
 	background-color: #FFFFFF;
 }
-	footer > span, footer > p{
-		margin-left: 5%;
+	footer > span{
+
 	}

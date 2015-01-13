@@ -54,3 +54,7 @@
 	opacity: 1;
 }
 
+/** Footer **/
+footer > span, footer > p{
+	margin-left: 5%;
+}
