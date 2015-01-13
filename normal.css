@@ -24,6 +24,10 @@
 /************************/
 /* 		 Sections 		*/
 /************************/
+/** Illustration **/
+#drwg{
+	height: 450px;
+}
 
 /** Bio Section **/
 #bio-title{

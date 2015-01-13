@@ -24,6 +24,10 @@
 /************************/
 /* 		 Sections 		*/
 /************************/
+/** Illustration **/
+#drwg{
+	height: 300px;
+}
 
 /** Bio Section **/
 #bio-title{
@@ -32,8 +36,6 @@
 .icon{
 	margin: 0 auto;
 	display: block;
-	overflow: hidden;
-	clear: left;
 }
 
 /** Love Section **/
