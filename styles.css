@@ -1,3 +1,5 @@
+/* Stylesheet - Universal Styles */
+
 /************************/
 /* 		 Defaults		*/
 /************************/
@@ -35,12 +37,8 @@ body, html{
 	font-family: Montserrat L;
 	src: url('static/fonts/Montserrat-Light.otf');
 }
-/** Shortcuts **/
-.inline{
-	display: inline;
-}
 
-/** Links **/
+/** Link Styles **/
 a{
 	color: #49494B;
 	text-decoration: none;
@@ -70,20 +68,30 @@ p, ul, ol, span{
 	font-size: 16px;
 }
 
-/************************/
-/* 	  Custom Styling	*/
-/************************/
-.section-m{
+/** Layout Styles **/
+nav{
+		width: 100%;
+		height: 50px;
+		padding-top: 10px;
+		position: fixed;
+		background-color: #ffffff;
+		z-index: 9;
+	}
+section{
 	width: 100%;
-	height: 450px;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 40px;
+
 	position: relative;
 	top: 50px;
 }
-.section-s{
-	width: 100%;
-	height: 250px;
-	position: relative;
-	top: 50px;
+
+/************************/
+/* 	  Useful Classes	*/
+/************************/
+.inline{
+	display: inline;
 }
 .title{
 	font-family: Montserrat;
@@ -93,32 +101,173 @@ p, ul, ol, span{
 	font-family: Montserrat L;
 	font-size: 21px;
 }
-.subsubtitle{
-	font-family: Open Sans SB;
-	font-size: 16px;
-}
-.caption p, .caption span{
-	font-size: 21px;
-}
+
 /************************/
-/* 		Navigation		*/
+/* 	   Illustration		*/
 /************************/
-nav{
-		width: 100%;
-		height: 50px;
-		padding-top: 10px;
-		position: fixed;
-		background-color: #ffffff;
-		z-index: 9;
+#drwg{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	top: 50px;
+
+	background: url("static/images/cover.svg") no-repeat center center;
+	background-size: cover;
+}
+.overlay{
+	position: relative;
+	display: block;
+}
+@media (min-width: 1000px){
+	#o1{
+		top: 180px;
+		left: 50%;
+		margin-left: -510px;
 	}
+	#o2{
+		top: -120px;
+		left: 50%;
+		margin-left: -440px;
+	}
+	#o3{
+		top: -220px;
+		left: 50%;
+		margin-left: 180px;
+	}
+	#o4{
+		top: -280px;
+		left: 50%;
+		margin-left: 380px;
+	}
+}
+@media (max-width: 1000px) and (min-width: 720px){
+	#o1{
+		display: none;
+	}
+	#o2{
+		top: 60px;
+		left: 50%;
+		margin-left: -440px;
+	}
+	#o3{
+		top: -40px;
+		left: 50%;
+		margin-left: 180px;
+	}
+	#o4{
+		display: none;
+	}
+}
+@media (max-width: 720px){
+	#o1{
+		display: none;
+	}
+	#o2{
+		display: none;
+	}
+	#o3{
+		display: none;
+	}
+	#o4{
+		display: none;
+	}
+}
+
+/************************/
+/* 		 Sections		*/
+/************************/
+/** Bio Section **/
+#bio{
+	background-color: #49494B;
+}
+	#bio-title{
+		width: 200px;
+		height: auto;
+		padding: 10px;
+		background-color: #58585B;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	#bio-text{
+		width: 90%;
+		margin-left: 5%;
+		text-align: justify;
+		color: #E6E7E8;
+	}
+		.icon{
+			width: auto;
+			height: auto;
+			padding: 10px 20px 10px 20px;
+			margin-top: 10px;
+			text-align: center;
+			font-size: 14px;
+		}
+			.school{
+				background-color: #A14A4A;
+			}
+			.class{
+				margin-left: 5px;
+				background-color: #27536E;
+			}
+			.major{
+				margin-left: 5px;
+				background-color: #287A85;
+			}
+
+/** Love Section **/
+#love{
+	background-color: #DEDEE4;
+	position: relative;
+}
+	#love-title{
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.flex{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		-webkit-flex-flow: row wrap;
+
+	}
+		.love-box{
+			width: 280px;
+			height: auto;
+			margin-top: 30px;
+			padding: 10px;
+			position: relative;
+			background-color: #FFFFFF;
+			text-align: center;
+
+		}
+		.caption{
+			position: absolute;
+			top: 80px;
+		}
+		.caption-title{
+			width: 260px;
+			height: auto;
+			padding: 10px;
+			font-family: Open Sans SB;
+			font-size: 16px;
+			text-align: center;
+			background-color: #FFFFFF;
+			display: inline-block;
+		}
 
 /************************/
 /* 		  Footer 		*/
 /************************/
 footer{
 	width: 100%;
-	height: 75px;
+	height: auto;
+	padding: 10px;
 	position: relative;
 	top: 50px;
 	background-color: #FFFFFF;
 }
+	footer > span, footer > p{
+		margin-left: 5%;
+	}

@@ -1,5 +1,8 @@
 /* Stylesheet -- Mobile Viewport */
 
+/************************/
+/* 		Navigation		*/
+/************************/
 #menu{
 	position: relative;
 	margin-left: 5%;
@@ -13,8 +16,27 @@
 	}
 	#menu-icon{
 		position: relative;
-		top: 6px;
+		top: 3px;
 		float: right;
 		margin-right: 5%;
 	}
-		
+
+/************************/
+/* 		 Sections 		*/
+/************************/
+
+/** Bio Section **/
+#bio-title{
+	margin: 0 auto;
+}
+.icon{
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	clear: left;
+}
+
+/** Love Section **/
+.love-img{
+	opacity: 0.8;
+}
