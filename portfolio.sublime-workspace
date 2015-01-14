@@ -115,7 +115,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1674,
+				"buffer_size": 4162,
 				"line_ending": "Unix"
 			}
 		},
@@ -123,7 +123,7 @@
 			"file": "normal.css",
 			"settings":
 			{
-				"buffer_size": 990,
+				"buffer_size": 891,
 				"line_ending": "Unix"
 			}
 		},
@@ -131,7 +131,7 @@
 			"file": "styles.css",
 			"settings":
 			{
-				"buffer_size": 1397,
+				"buffer_size": 4681,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +139,7 @@
 			"file": "scripts.js",
 			"settings":
 			{
-				"buffer_size": 537,
+				"buffer_size": 1083,
 				"line_ending": "Unix",
 				"name": "// Styles"
 			}
@@ -172,11 +172,11 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io",
-		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/static"
+		"/Users/Jeffrey/Documents/Projects/Portfolio/jeffreyxiong.github.io"
 	],
 	"file_history":
 	[
+		"/Users/Jeffrey/Documents/Projects/Portfolio/jeffreyxiong.github.io/portfolio.sublime-project",
 		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/mobile.css",
 		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/static/images/cover.svg",
 		"/Users/Jeffrey/Documents/Projects/Web Portfolio/jeffreyxiong.github.io/normalize.css",
@@ -340,15 +340,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1674,
+						"buffer_size": 4162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1329,
-								1329
+								0,
+								0
 							]
 						],
 						"settings":
@@ -369,15 +369,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 990,
+						"buffer_size": 891,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								946,
-								946
+								0,
+								0
 							]
 						],
 						"settings":
@@ -398,15 +398,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1397,
+						"buffer_size": 4681,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								950,
-								950
+								0,
+								0
 							]
 						],
 						"settings":
@@ -427,21 +427,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 537,
+						"buffer_size": 1083,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								146
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"auto_name": "// Styles",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
