@@ -39,7 +39,7 @@
 }
 
 /** Footer **/
-footer > span, footer > p{
-	margin: 0 auto;
+.end{
+	margin-left: 5%;
 }
 

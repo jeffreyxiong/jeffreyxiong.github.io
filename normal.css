@@ -47,14 +47,15 @@
 	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-.love-box:hover > .love-img{
+.hover:hover > .love-img{
 	-webkit-filter: grayscale(80%);
 }
-.love-box:hover > .caption{
+.hover:hover > .caption{
 	opacity: 1;
 }
 
 /** Footer **/
-footer > span, footer > p{
+.end{
 	margin-left: 5%;
 }
+

@@ -4,11 +4,11 @@
 $(document).ready(function(){
 
 	//	PARALLAX SCROLL
-	//	media check
+	//	media check (disable parallax on mobile devices)
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
 		var device = true
 	}
-	var media = window.matchMedia("(min-width: 720px)")
+	var media = window.matchMedia('(min-width: 720px)')
 	if (media.matches || !device) {
 		// cache window object
 		$window = $(window);
@@ -27,4 +27,12 @@ $(document).ready(function(){
 		}); // end parallax
 	}
 
+	//	MISCELLANEOUS 
+	// 	device check (disable hover effect on touch-enabled devices)
+	var touch = 'ontouchstart' in document.documentElement;
+	if (touch) {
+		$('.love-box').removeClass('hover')
+		$('.caption').css({'opacity':'1'})
+		$('.love-img').css({'opacity':'0.8'})
+	}
 });
