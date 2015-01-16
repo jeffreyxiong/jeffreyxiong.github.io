@@ -9,7 +9,7 @@ Last Edit: 1/13/15
 <html lang="en">
 
 <head>
-	<title> Jeffrey Xiong </title>
+	<title> Portfolio </title>
 	<!-- So Meta --> 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,12 +31,17 @@ Last Edit: 1/13/15
 		<div id="menu">
 			<h1 class="inline" id="menu-home"><a href="" class="">JEFFREY XIONG</a></h1>
 			<h3 class="inline menu-item"><a href="static/resume.pdf" class="">Resume</a></h3>
-			<a href="#"><img src="static/images/menu.svg" alt="Menu" id="menu-icon"></a>
+			<h3 class="inline menu-item"><a href="work.html" class="">Work</a></h3>
+			<img src="static/images/menu.svg" alt="Menu" id="menu-icon">
 		</div>
 	</nav>
+	<div class="expand">
+		<a href="work.html"><span> Work </span></a>
+		<a href="static/resume.pdf"><span> Resume </span></a>
+	</div>
 
 	<!-- Illustration -->
-	<section id="drwg" data-type="background" data-speed="-2">
+	<section id="drwg" class="unexpand" data-type="background" data-speed="-2">
 		<img id="o1" class="overlay" src="static/images/overlay-01.svg">
 		<img id="o2" class="overlay" src="static/images/overlay-02.svg">
 		<img id="o3" class="overlay" src="static/images/overlay-03.svg">
@@ -44,7 +49,7 @@ Last Edit: 1/13/15
 	</section>
 
 	<!-- Bio -->
-	<section id="bio">
+	<section id="bio" class="unexpand">
 		<div id="bio-title">	
 			<span class="subtitle"> HELLO </span><span class="title"> WORLD </span>
 		</div>
@@ -57,19 +62,19 @@ Last Edit: 1/13/15
 	</section>
 
 	<!-- Love -->
-	<section id="love">
+	<section id="love" class="unexpand">
 		<div id="love-title">
 			<span class="subtitle"> THIS IS WHAT I LOVE. </span>
 		</div>
-		<div class="flex">
+		<div class="flex box-a">
 			<a href="http://github.com/jeffreyxiong" title="Github Profile">
 				<div id="love-code" class="love-box hover">
 					<img src="static/images/love-code.png" class="love-img" width="280" height="200">
 					<div class="caption">
 						<span class="caption-title"> COMPUTER SCIENCE </span>
 					</div>
-					<div class="love-text">
-						<p> I charm Pythons, drink Java, and objectify C. </p>
+					<div class="caption-text">
+						<p><span>[GitHub Page]</span><br>I charm Pythons, drink Java, and objectify C. </p>
 					</div>
 				</div>
 			</a>
@@ -79,8 +84,8 @@ Last Edit: 1/13/15
 					<div class="caption">
 						<span class="caption-title"> GRAPHIC DESIGN </span>
 					</div>
-					<div class="love-text">
-						<p> Colors, shapes, and words. Arranged prettily. </p>
+					<div class="caption-text">
+						<p><span>[Design Portfolio]</span><br>Colors, shapes, and words. Arranged prettily. </p>
 					</div>
 				</div>
 			</a>
@@ -90,22 +95,22 @@ Last Edit: 1/13/15
 					<div class="caption">
 						<span class="caption-title"> PHOTOGRAPHY </span>
 					</div>
-					<div class="love-text">
-						<p> Cute animals, cool people, curious places. </p>
+					<div class="caption-text">
+						<p><span>[Flickr Stream]</span><br>Cute animals, cool people, curious places. </p>
 					</div>
 				</div>
 			</a>
 		</div>
 	</section>
 	<!-- Footer -->
-	<footer>
+	<footer class="unexpand">
 		<span class="end"> &copy; 2015 Jeffrey Xiong. </span>
 		<a href="https://www.facebook.com/profile.php?id=100000016908650" title="Facebook Profile" ><img class="inline footer-item" src="static/images/facebook.png" width="25" height="25"></a>
 		<a href="https://www.linkedin.com/pub/jeffrey-xiong/89/843/b08" title="LinkedIn Profile"><img class="inline footer-item" src="static/images/linkedin.png" width="25" height="25"></a>
 		<a href="mailto:jx13@rice.edu" title="Email"><img class="inline footer-item" src="static/images/email.png" width="25" height="25"></a>
 	</footer>
 
-</body>
 
+</body>
 
 </html>

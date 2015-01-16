@@ -6,7 +6,7 @@ $(document).ready(function(){
 	//	PARALLAX SCROLL
 	//	media check (disable parallax on mobile devices)
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
-		var device = true
+		var device = true;
 	}
 	var media = window.matchMedia('(min-width: 720px)')
 	if (media.matches || !device) {
@@ -20,7 +20,7 @@ $(document).ready(function(){
 				// scroll speed
 				var y = -($window.scrollTop() / $bg.data('speed'));
 				// background position
-				var coords = '50%' + y + 'px'
+				var coords = '50%' + y + 'px';
 				// move background
 				$bg.css({backgroundPosition: coords});
 			}); // end scroll
@@ -31,8 +31,41 @@ $(document).ready(function(){
 	// 	device check (disable hover effect on touch-enabled devices)
 	var touch = 'ontouchstart' in document.documentElement;
 	if (touch) {
-		$('.love-box').removeClass('hover')
-		$('.caption').css({'opacity':'1'})
-		$('.love-img').css({'opacity':'0.8'})
+		$('.love-box').removeClass('hover');
+		$('.love-img').css({'opacity':'0.8'});
 	}
+
+	// MENU ICON EXPANSION
+	// initial click condition
+	var click = false;
+	$('#menu-icon').click(function(){
+		// expand on click
+		if (!click){
+			$('.expand').css({'display':'block'});
+			click = true;
+		}
+		// hide on next click
+		else {
+			$('.expand').css({'display':'none'});
+			click = false;
+		}
+	});
+	// click away of menu
+	$('.unexpand').click(function(){
+		if (click){
+			$('.expand').css({'display':'none'});
+			click = false;
+		}
+	});
+	// hide menu on window resize to greater than 720
+	$(window).resize(function(){
+		var w = $(window).width();
+		if (w >= 720) {
+			if ($(window).width() > 720) {
+				$('.expand').css({'display':'none'});
+				click = false;
+			}
+		}	
+	});
 });
+

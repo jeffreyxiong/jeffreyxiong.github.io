@@ -6,7 +6,6 @@
 body, html{
 	margin: 0;
 	padding: 0;
-	background-color: #5694BA;
 }
 /** Fonts **/
 @font-face{
@@ -44,10 +43,10 @@ a{
 	text-decoration: none;
 }
 	a:hover{
-		color: #27536E;
+		color: #5694BA;
 	}
 	a:active{
-		color: #5694BA;
+		color: #27536E;
 	}
 
 /** Text Styles **/
@@ -100,6 +99,35 @@ section{
 	font-family: Montserrat L;
 	font-size: 21px;
 }
+
+/************************/
+/* 	    Navigation		*/
+/************************/
+#menu-icon{
+	cursor: pointer;
+}
+.expand{
+	display: none;
+	width: 100%;
+	margin-left: 0px;
+	position: fixed;
+	border-top: 2px solid #EFEFEF;
+	top: 50px;
+	left: 0px;
+	z-index: 10;
+}
+	.expand > a{
+		width: 100%;
+		height: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+		display: block;
+		background-color: #FFFFFF;
+	}
+	.expand > a:hover {
+		background-color: #EFEFEF;
+	}
 
 /************************/
 /* 	   Illustration		*/
@@ -213,11 +241,11 @@ section{
 			}
 
 /** Love Section **/
-#love{
+#love, #work{
 	background-color: #DEDEE4;
 	position: relative;
 }
-	#love-title{
+	#love-title, .work-title{
 		width: 250px;
 		text-align: center;
 		margin: 0 auto;
@@ -225,8 +253,8 @@ section{
 	.flex{
 		display: -webkit-flex;
 		display: flex;
-		-webkit-justify-content: space-around;
-		justify-content: space-around;
+		-webkit-justify-content: center;
+		justify-content: center;
 		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
 		-webkit-flex-direction: row;
@@ -240,29 +268,58 @@ section{
 			position: relative;
 			background-color: #FFFFFF;
 			text-align: center;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.caption-text p{
+			font-size: 12px;
+		}
+		.caption-text span{
+			font-family: Open Sans R; 
+			font-size: 12px;
+		}
+		.love-img{
+			-webkit-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
 		}
 		.caption{
 			position: absolute;
-			top: 80px;
+			top: 100px;
+			-webkit-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
 		}
 			.caption-title{
 				width: 260px;
 				height: auto;
 				padding: 10px;
 				font-family: Open Sans SB;
-				font-size: 16px;
+				font-size: 14px;
 				text-align: center;
 				background-color: #FFFFFF;
 				display: inline-block;
 			}
+		.hover:hover > .love-img{
+			-webkit-filter: grayscale(80%);
+		}
+		.hover:hover > .caption{
+			top: 180px;
+		}
+		.box-a > a{
+			color: #000;
+		}
 
-/** Contact Section **/
-#contact{
-	background-color: #A0B19B;
+/** Work Section **/
+.work-box{
+	width: 400px;
+	height: auto;
+	margin: 30px;
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	background-color: #FFFFFF;
 }
-	#contact-text{
-		margin-left: 5%;
-	}
+
+
 
 /************************/
 /* 		  Footer 		*/
