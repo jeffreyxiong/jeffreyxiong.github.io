@@ -10,31 +10,31 @@ body, html{
 /** Fonts **/
 @font-face{
 	font-family: Geometria;
-	src: url('static/fonts/Geometria-Light.otf');
+	src: url('../fonts/Geometria-Light.otf');
 }
 @font-face{
 	font-family: Ostrich R;
-	src: url('static/fonts/Ostrich Regular.ttf');
+	src: url('../fonts/Ostrich Regular.ttf');
 }
 @font-face{
 	font-family: Open Sans L;
-	src: url('static/fonts/OpenSans-Light.ttf');
+	src: url('../fonts/OpenSans-Light.ttf');
 }
 @font-face{
 	font-family: Open Sans R;
-	src: url('static/fonts/OpenSans-Regular.ttf');
+	src: url('../fonts/OpenSans-Regular.ttf');
 }
 @font-face{
 	font-family: Open Sans SB;
-	src: url('static/fonts/OpenSans-Semibold.ttf');
+	src: url('../fonts/OpenSans-Semibold.ttf');
 }
 @font-face{
 	font-family: Montserrat;
-	src: url('static/fonts/Montserrat-Regular.otf');
+	src: url('../fonts/Montserrat-Regular.otf');
 }
 @font-face{
 	font-family: Montserrat L;
-	src: url('static/fonts/Montserrat-Light.otf');
+	src: url('../fonts/Montserrat-Light.otf');
 }
 
 /** Link Styles **/
@@ -99,6 +99,10 @@ section{
 	font-family: Montserrat L;
 	font-size: 21px;
 }
+.subsubtitle{
+	font-family: Geometria;
+	font-size: 18px;
+}
 
 /************************/
 /* 	    Navigation		*/
@@ -137,7 +141,7 @@ section{
 	position: relative;
 	top: 50px;
 
-	background: url("static/images/cover.svg") no-repeat center center;
+	background: url("../images/cover.svg") no-repeat center center;
 	background-size: cover;
 }
 .overlay{
@@ -241,12 +245,11 @@ section{
 			}
 
 /** Love Section **/
-#love, #work{
-	background-color: #DEDEE4;
-	position: relative;
+#love{
+	background-color: #A7A7A7;
 }
 	#love-title, .work-title{
-		width: 250px;
+		width: 300px;
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -309,8 +312,11 @@ section{
 		}
 
 /** Work Section **/
+#work{
+	background-color: #CCCCCC;
+}
 .work-box{
-	width: 400px;
+	width: 410px;
 	height: auto;
 	margin: 30px;
 	padding: 10px;
@@ -318,6 +324,17 @@ section{
 	text-align: center;
 	background-color: #FFFFFF;
 }
+	.work-subtitle{
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.work-img{
+		border: 2px solid #CCCCCC;
+		display: block;
+		margin: auto;
+	}
 
 
 
