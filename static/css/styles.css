@@ -331,9 +331,16 @@ section{
 		margin-top: 20px;
 	}
 	.work-img{
+		-webkit-transition: all 0.5 ease-in-out;
+		transition: all 0.5 ease-in-out;
+		width: 99%;
+		height: calc(5/8 * 99%);
 		border: 2px solid #CCCCCC;
 		display: block;
 		margin: auto;
+	}
+	.work-img:hover{
+		-webkit-filter: grayscale(70%);
 	}
 
 
