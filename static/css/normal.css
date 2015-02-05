@@ -16,6 +16,7 @@
 .menu-item{
 	margin-right: 5%;
 	float: right;
+	padding-bottom: 5px;
 }
 #menu-icon{
 	display: none;

@@ -84,5 +84,19 @@ $(document).ready(function(){
 		}	
 	});
 
+	// SELECTED CONDITION
+	$(window).scroll(function(){
+		if ($(this).scrollTop() >= 1167) {
+        	$('.about-link').removeClass('selected');
+        	$('.projects-link').addClass('selected');
+    	} else if ($(this).scrollTop() >= 520) {
+        	$('.about-link').addClass('selected');
+        	$('.projects-link').removeClass('selected');
+    	} else {
+    		$('.about-link').removeClass('selected');
+    		$('.projects-link').removeClass('selected');
+    	}
+	});
+
 });
 

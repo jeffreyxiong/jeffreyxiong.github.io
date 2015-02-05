@@ -75,6 +75,8 @@ nav{
 		position: fixed;
 		background-color: #ffffff;
 		z-index: 9;
+		background-clip: padding-box; 
+		border-bottom: 5px solid rgba(73, 73, 75, 0.3);
 	}
 section{
 	width: 100%;
@@ -103,7 +105,10 @@ section{
 	font-family: Geometria;
 	font-size: 18px;
 }
-
+.selected{
+	color: #5694BA !important; 
+	border-bottom: 2px solid #5694BA;
+}
 /************************/
 /* 	    Navigation		*/
 /************************/
@@ -246,7 +251,7 @@ section{
 
 /** Love Section **/
 #love{
-	background-color: #A7A7A7;
+	background-color: #8D8D8D;
 }
 	#love-title, .work-title{
 		width: 300px;
@@ -281,13 +286,14 @@ section{
 			font-family: Open Sans R; 
 			font-size: 12px;
 		}
-		.love-img{
+		.love-img, .work-img{
 			-webkit-transition: all 0.5s ease-in-out;
 			transition: all 0.5s ease-in-out;
 		}
 		.caption{
 			position: absolute;
 			top: 100px;
+			background-color: #FFFFFF;
 			-webkit-transition: all 0.5s ease-in-out;
 			transition: all 0.5s ease-in-out;
 		}
@@ -298,7 +304,6 @@ section{
 				font-family: Open Sans SB;
 				font-size: 14px;
 				text-align: center;
-				background-color: #FFFFFF;
 				display: inline-block;
 			}
 		.hover:hover > .love-img{
@@ -306,14 +311,24 @@ section{
 		}
 		.hover:hover > .caption{
 			top: 180px;
+			background-color: #49494B;
+			color: #FFFFFF;
 		}
 		.box-a > a{
 			color: #000;
 		}
 
 /** Work Section **/
+#resume{
+	background-color: #A7A7A7;
+}
+#resume:hover{
+	color: #000000;
+	background-color: #5694BA;
+	opacity: 0.8;
+}
 #work{
-	background-color: #CCCCCC;
+	background-color: #B4B4B4;
 }
 .work-box{
 	width: 410px;
@@ -331,16 +346,14 @@ section{
 		margin-top: 20px;
 	}
 	.work-img{
-		-webkit-transition: all 0.5 ease-in-out;
-		transition: all 0.5 ease-in-out;
 		width: 99%;
 		height: calc(5/8 * 99%);
-		border: 2px solid #CCCCCC;
+		border: 2px solid #B4B4B4;
 		display: block;
 		margin: auto;
 	}
 	.work-img:hover{
-		-webkit-filter: grayscale(70%);
+		-webkit-filter: grayscale(80%);
 	}
 
 

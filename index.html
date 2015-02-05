@@ -31,14 +31,14 @@ Last Edit: 1/13/15
 		<div id="menu">
 			<h1 class="inline" id="menu-home"><a href="#">JEFFREY XIONG</a></h1>
 			<!-- <h3 class="inline menu-item"><a href="static/resume.pdf" class="">Resume</a></h3> -->
-			<h3 class="inline menu-item"><a href="#projects">Projects</a></h3>
-			<h3 class="inline menu-item"><a href="#about">About</a></h3>
+			<h3 class="inline menu-item projects-link"><a href="#projects">Projects</a></h3>
+			<h3 class="inline menu-item about-link"><a href="#about">About</a></h3>
 			<img src="static/images/menu.svg" alt="Menu" id="menu-icon">
 		</div>
 	</nav>
 	<div class="expand">
-		<a href="#about"><span> About </span></a>
-		<a href="#projects"><span> Projects </span></a>
+		<a href="#about" class="unexpand"><span> About </span></a>
+		<a href="#projects" class="unexpand"><span> Projects </span></a>
 	</div>
 
 	<!-- Illustration -->
@@ -110,8 +110,17 @@ Last Edit: 1/13/15
 	<!-- Anchor -->
 	<div id="projects"></div>
 
+	<!-- Resume -->
+	<a href="static/resume.pdf" class="resume-a">
+	<section id="resume" class="unexpand">
+		<div class="work-title">
+			<span class="subtitle"> RESUME </span>
+		</div>
+	</section>
+	</a>
+
 	<!-- Work -->
-	<section id="work">
+	<section id="work" class="unexpand">
 		<div class="work-title">
 			<span class="subtitle"> COLLEGE PROJECTS </span>
 		</div>
