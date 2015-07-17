@@ -69,22 +69,21 @@ p, ul, ol, span{
 
 /** Layout Styles **/
 nav{
-		width: 100%;
-		height: 50px;
-		padding-top: 10px;
-		position: fixed;
-		background-color: #ffffff;
-		z-index: 9;
-		background-clip: padding-box; 
-		border-bottom: 5px solid rgba(73, 73, 75, 0.3);
-	}
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	padding-top: 10px;
+	background-color: #ffffff;
+	z-index: 9;
+	background-clip: padding-box; 
+}
 section{
 	width: 100%;
 	height: auto;
 	padding-top: 30px;
 	padding-bottom: 40px;
 	position: relative;
-	top: 50px;
+	/*top: 50px;*/
 }
 
 /************************/
@@ -143,11 +142,20 @@ section{
 /************************/
 #drwg{
 	width: 100%;
-	position: relative;
+	position: fixed;
 	top: 50px;
-
 	background: url("../images/cover.svg") no-repeat center center;
 	background-size: cover;
+	z-index: -100;
+	transform: translate3d(0px, 0px, 0px);
+}
+#drwg-overlay{
+	position: relative;
+	top: 50px;
+}
+.draw-fix{
+	width: 100%;
+	height: 450px;
 }
 .overlay{
 	position: relative;
@@ -251,7 +259,7 @@ section{
 
 /** Love Section **/
 #love{
-	background-color: #8D8D8D;
+	background-color: #D2D2D7;
 }
 	#love-title, .work-title{
 		width: 300px;
@@ -325,7 +333,7 @@ section{
 #resume:hover{
 	color: #000000;
 	background-color: #5694BA;
-	opacity: 0.8;
+	opacity: 1.0;
 }
 #work{
 	background-color: #B4B4B4;
@@ -367,7 +375,6 @@ footer{
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	top: 50px;
 	background-color: #FFFFFF;
 }
 	.end{

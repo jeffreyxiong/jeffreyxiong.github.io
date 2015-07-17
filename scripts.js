@@ -34,7 +34,7 @@ $(document).ready(function(){
 			// custom scroll
 			$(window).scroll(function(){
 				// scroll speed
-				var y = -($window.scrollTop() / $bg.data('speed'));
+				var y = -($window.scrollTop() / 4);
 				// background position
 				var coords = '50%' + y + 'px';
 				// move background
@@ -84,8 +84,9 @@ $(document).ready(function(){
 		}	
 	});
 
-	// SELECTED CONDITION
+	// SCROLL FUNCTIONS
 	$(window).scroll(function(){
+		// selected logic
 		if ($(this).scrollTop() >= 1167) {
         	$('.about-link').removeClass('selected');
         	$('.projects-link').addClass('selected');
@@ -96,6 +97,12 @@ $(document).ready(function(){
     		$('.about-link').removeClass('selected');
     		$('.projects-link').removeClass('selected');
     	}
+    	// if ($(this).scrollTop() >= 550) {
+    	// 	$('#drwg').hide();
+    	// } else {
+    	// 	$('#drwg').show();
+    	// }
+    	// $('#drwg').
 	});
 
 });
