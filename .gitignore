@@ -2,4 +2,8 @@
 #################
 
 *.codekit
+
+# Sass #
+########
 *.scss
+.sass-cache
