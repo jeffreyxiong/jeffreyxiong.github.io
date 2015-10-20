@@ -1,0 +1,1 @@
+angular.module("app",[]).controller("grid",function(l){l.gallery=[{filter:"nature"}],l.galleryCount=l.gallery.length});

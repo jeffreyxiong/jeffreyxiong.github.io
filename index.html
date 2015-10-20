@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Website property of Jeffrey Xiong
 Created: 11/02/14
 Last Edit: 1/13/15
@@ -9,84 +9,107 @@ Last Edit: 1/13/15
 <html lang="en">
 
 <head>
-	<title> Portfolio </title>
-	<!-- So Meta --> 
+	<title> Jeffrey Xiong </title>
+	<!-- so meta --> 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<meta name="author" content="Jeffrey Xiong">
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="static/css/reset.css">
-	<link rel="stylesheet" href="static/css/styles.css">
-	<link rel="stylesheet" media="(min-width: 720px)" href="static/css/normal.css">
-	<link rel="stylesheet" media="(max-width: 720px)" href="static/css/mobile.css">
-	<!-- jQuery & JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="scripts.js"></script>
+	<meta name="keywords" content="Jeffrey Xiong, developer, web, designer, photographer"
+	<meta name="description" content="I am a passionate developer and designer currently studying at Rice University. I learn fast, work hard, and laugh constantly.">
+	<!-- stylish -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" media="(min-width: 720px)" href="css/normal.css">
+	<link rel="stylesheet" media="(max-width: 720px)" href="css/mobile.css">
 </head>
 
 <body>
 	<!-- Navigation -->
 	<nav>
 		<div id="menu">
-			<h1 class="inline" id="menu-home"><a href="#"><img src="static/images/logo.svg"></a></h1>
-			<!-- <h3 class="inline menu-item"><a href="static/resume.pdf" class="">Resume</a></h3> -->
-			<h3 class="inline menu-item projects-link"><a href="#projects">Projects</a></h3>
+			<a href="#"> <div class="inline" id="menu-logo">
+				<svg height="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-242 335.7 126 123.3" style="enable-background:new -242 335.7 126 123.3;" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:#26536E;}
+						.st1{fill:#FFFFFF;}
+					</style>
+					<rect x="-183.5" y="336.7" transform="matrix(0.7071 0.7071 -0.7071 0.7071 225.1819 240.5941)" class="st1" width="11.3" height="110.8"/>
+					<polygon class="st1" points="-183.5,442.6 -183.5,336.7 -180.8,336.7 -175.7,446 "/>
+				</svg>
+				<h3 class="inline" id="menu-logo-text">JEFFREY XIONG</h3>
+			</div></a>
+			<h3 class="inline menu-item"><a href="resume.pdf">Resume</a></h3>
+			<h3 class="inline menu-item projects-link"><a href="photos.html">Photography</a></h3>
+			<h3 class="inline menu-item projects-link"><a href="#projects">Work</a></h3>
 			<h3 class="inline menu-item about-link"><a href="#about">About</a></h3>
-			<img src="static/images/menu.svg" alt="Menu" id="menu-icon">
+			<img src="images/menu.svg" alt="Menu" id="menu-icon">
 		</div>
 	</nav>
 	<div class="nav-fix"></div>
 	<div class="expand">
 		<a href="#about" class="unexpand"><span> About </span></a>
 		<a href="#projects" class="unexpand"><span> Projects </span></a>
+		<a href="resume.pdf" class="unexpand"><span>Resume</span></a></h3>
 	</div>
 
 	<!-- Illustration -->
-	<section id="drwg" class="unexpand" data-type="background"></section>
+	<section id="drwg" data-type="background"></section>
 	<div id="drwg-overlay">
-		<img id="o1" class="overlay" src="static/images/overlay-01.svg">
-		<img id="o2" class="overlay" src="static/images/overlay-02.svg">
-		<img id="o3" class="overlay" src="static/images/overlay-03.svg">
-		<img id="o4" class="overlay" src="static/images/overlay-04.svg">
+		<img id="o1" class="overlay" src="images/overlay-01.svg">
+		<img id="o2" class="overlay" src="images/overlay-02.svg">
+		<img id="o3" class="overlay" src="images/overlay-03.svg">
+		<img id="o4" class="overlay" src="images/overlay-04.svg">
 	</div>
 
 	<!-- Anchor -->
 	<div id="about"></div>
 
-	<!-- Bio -->
-	<section id="bio" class="unexpand" data-type="background" data-speed="-10">
-		<div id="bio-title">	
-			<span class="subtitle"> HELLO </span><span class="title"> WORLD </span>
+	<!-- Hello -->
+	<section id="hello">
+		<div id="hello-title">	
+			<span class="title"> hello. </span>
 		</div>
-		<div id="bio-text">
-			<p> I am a motivated student, design-loving developer, fast learner, and amateur artist. My other passions include playing piano, reading science fiction, doodling, and swimming. </p>
-			<span class="icon school"> Rice University </span>
-			<span class="icon class"> Class of 2018 </span>
-			<span class="icon major"> B.S. Computer Science </span>
+		<div id="hello-text">
+			<p> I am an undergraduate student at <b> Rice University </b>, and I currently study Computer Science. I am passionate about technology, programming, cognitive science, graphic design, and photography.</p>
+			<p> I work hard, laugh constantly, and sleep infrequently. </p>
 		</div>
+		<div id="hello"
 	</section>
 
 	<!-- Love -->
-	<section id="love" class="unexpand">
+	<!-- <section id="love">
 		<div id="love-title">
 			<span class="subtitle"> THIS IS WHAT I LOVE. </span>
 		</div>
 		<div class="flex box-a">
-			<a href="http://github.com/jeffreyxiong" title="Github Profile">
-				<div id="love-code" class="love-box hover">
-					<img src="static/images/love-code.png" class="love-img" width="280" height="200">
-					<div class="caption">
-						<span class="caption-title"> COMPUTER SCIENCE </span>
-					</div>
+			<a href="http://github.com/jeffreyxiong" title="Github Profile" id="love-code" class="love-box">
+				<div>
+					<img src="" class="love-img" width="300" height="200">
 					<div class="caption-text">
-						<p><span>[GitHub Page]</span><br>I charm Pythons, drink Java, and objectify C. </p>
+						<p> I charm Python, drink Java, and objectify C. </p>
 					</div>
 				</div>
 			</a>
-			<a href="static/design_portfolio.pdf" title="Design Portfolio">
+			<a href="http://github.com/jeffreyxiong" title="Github Profile" id="love-design" class="love-box">
+				<div>
+					<img src="images/love-code.svg" class="love-img" width="300">
+					<div class="caption-text">
+						<p> I charm Python, drink Java, and objectify C. </p>
+					</div>
+				</div>
+			</a>
+			<a href="http://github.com/jeffreyxiong" title="Github Profile" id="love-photo" class="love-box">
+				<div>
+					<img src="" class="love-img" width="300" height="200">
+					<div class="caption-text">
+						<p> I charm Python, drink Java, and objectify C. </p>
+					</div>
+				</div>
+			</a> -->
+			<!-- <a href="design_portfolio.pdf" title="Design Portfolio">
 				<div id="love-design" class="love-box hover">
-					<img src="static/images/love-design.png" class="love-img" width="280" height="200">
+					<img src="images/love-design.png" class="love-img" width="280" height="200">
 					<div class="caption">
 						<span class="caption-title"> GRAPHIC DESIGN </span>
 					</div>
@@ -97,7 +120,7 @@ Last Edit: 1/13/15
 			</a>
 			<a href="https://www.flickr.com/photos/128633956@N08/" title="Flickr Photostream">
 				<div id="love-photo" class="love-box hover">
-					<img src="static/images/love-photo.png" class="love-img" width="280" height="200">
+					<img src="images/love-photo.png" class="love-img" width="280" height="200">
 					<div class="caption">
 						<span class="caption-title"> PHOTOGRAPHY </span>
 					</div>
@@ -105,24 +128,24 @@ Last Edit: 1/13/15
 						<p><span>[Flickr Stream]</span><br>Cute animals, cool people, curious places. </p>
 					</div>
 				</div>
-			</a>
-		</div>
-	</section>
+			</a> -->
+	<!-- 	</div>
+	</section> -->
 
 	<!-- Anchor -->
 	<div id="projects"></div>
 
 	<!-- Resume -->
-	<a href="static/resume.pdf" class="resume-a">
+<!-- 	<a href="resume.pdf" class="resume-a">
 	<section id="resume" class="unexpand">
 		<div class="work-title">
 			<span class="subtitle"> RESUME </span>
 		</div>
 	</section>
-	</a>
+	</a> -->
 
 	<!-- Work -->
-	<section id="work" class="unexpand">
+<!-- 	<section id="work" class="unexpand">
 		<div class="work-title">
 			<span class="subtitle"> COLLEGE PROJECTS </span>
 		</div>
@@ -131,64 +154,54 @@ Last Edit: 1/13/15
 		</div>
 		<div class="flex box-a">
 			<div class="work-box">
-				<a href="http://ricecrawlr.appspot.com"><img src="static/images/crawlr.png" class="work-img" width="400" height="250"></a>
+				<a href="http://ricecrawlr.appspot.com"><img src="images/crawlr.png" class="work-img" width="400" height="250"></a>
 				<div class="caption-text">
 					<p><span>[Crawlr]</span> HackRice Team Project. Crawl/private party planning web app that implements Venmo to pay stop hosts, and Twilio to update invitees on location. </p>
 				</div>
 			</div>
 			<div class="work-box">
-				<a href="http://www.riceapps.org"><img src="static/images/riceapps.png" class="work-img" width="400" height="250"></a>
+				<a href="http://www.riceapps.org"><img src="images/riceapps.png" class="work-img" width="400" height="250"></a>
 				<div class="caption-text">
 					<p><span>[RiceApps]</span> RiceApps team website. Contributed front-end and UI design, and Python Flask / SQLite back-end.</p>
 				</div>
 			</div>
 			<div class="work-box">
-				<a href="http://themed-travel.appspot.com"><img src="static/images/viagem.png" class="work-img" width="400" height="250"></a>
+				<a href="http://themed-travel.appspot.com"><img src="images/viagem.png" class="work-img" width="400" height="250"></a>
 				<div class="caption-text">
 					<p><span>[Viagem]</span> HackTX Team Project. Theme-based travel web app that implements Google Places and Sendgrid API. Led front-end design using Bootstrap. </p>
 				</div>
 			</div>
 			<div class="work-box">
-				<a href="http://www.jeffreyxiong.me"><img src="static/images/portfolio.png" class="work-img" width="400" height="250"></a>
+				<a href="http://www.jeffreyxiong.me"><img src="images/portfolio.png" class="work-img" width="400" height="250"></a>
 				<div class="caption-text">
 					<p><span>[Portfolio]</span> Personal project to showcase my design, development, and other work.</p>
 				</div>
 			</div>
-			<!-- <div class="work-box">
-				<img src="" class="work-img" width="400" height="250">
-				<div class="caption-text">
-					<p><span>[COMP 140]</span> Projective Geometry. QR Codes. Breadth-First, Depth-First, and A* Search Algorithms. Markov Chain Models. Stock Market Prediction. </p>
-				</div>
-			</div> -->
 		</div>
 		<div class="work-title">
 			<span class="subtitle"> HIGH SCHOOL PROJECTS </span>
 		</div>
 		<div class="flex box-a">
 			<div class="work-box">
-				<a href="http://www.ve-oasis.com"><img src="static/images/oasis.png" class="work-img" width="400" height="250"></a>
+				<a href="http://www.ve-oasis.com"><img src="images/oasis.png" class="work-img" width="400" height="250"></a>
 				<div class="caption-text">
 					<p><span>[Oasis]</span> Designed and developed website to showcase virtual company Oasis, which sold rooftop gardens. Website garnered 1st place at Virtual Enterprise California State Trade Fair, and 3rd place at Virtual Enterprise International Trade Fair. </p>
 				</div>
 			</div>
-			<div class="work-box">
-				<img src="static/images/expedition.png" class="work-img" width="400" height="250">
-				<div class="caption-text">
-					<p><span>[Expedition]</span> Designed and developed website to showcase virtual company Expedition, which sold educational backpacking trips. </p>
-				</div>
-			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- Footer -->
-	<footer class="unexpand">
+	<footer>
 		<span class="end"> &copy; 2015 Jeffrey Xiong. </span>
-		<a href="https://www.facebook.com/profile.php?id=100000016908650" title="Facebook Profile" ><img class="inline footer-item" src="static/images/facebook.png" width="25" height="25"></a>
-		<a href="https://www.linkedin.com/in/jeffreyxiong/en" title="LinkedIn Profile"><img class="inline footer-item" src="static/images/linkedin.png" width="25" height="25"></a>
-		<a href="mailto:jx13@rice.edu" title="Email"><img class="inline footer-item" src="static/images/email.png" width="25" height="25"></a>
+		<a href="https://www.facebook.com/profile.php?id=100000016908650" title="Facebook Profile" ><img class="inline footer-item" src="images/facebook.png" width="25" height="25"></a>
+		<a href="https://www.linkedin.com/in/jeffreyxiong/en" title="LinkedIn Profile"><img class="inline footer-item" src="images/linkedin.png" width="25" height="25"></a>
+		<a href="mailto:jx13@rice.edu" title="Email"><img class="inline footer-item" src="images/email.png" width="25" height="25"></a>
 	</footer>
-
+	
+	<!-- scripted -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
 
 </body>
-
 </html>
