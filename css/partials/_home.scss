@@ -17,6 +17,11 @@
 	background: url('../img/intro-overlay.png') no-repeat center center;
 	background-size: cover;
 	z-index: -3;
+
+	@media (max-device-width: 720), (max-width: 720px) {
+		background: none;
+		background-color: rgba(235, 241, 245, 0.8);
+	}
 }
 .intro-accent {
 	display: block;
@@ -27,6 +32,11 @@
 .intro-box {
 	display: none;
 	margin-left: 10%;
+	@media (max-device-width: 720), (max-width: 720px) {
+		padding: 10px;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 // content
 .content {

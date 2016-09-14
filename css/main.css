@@ -66,6 +66,9 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 52px; }
+  @media (max-device-width: 720), (max-width: 720px) {
+    h1 {
+      font-size: 48px; } }
 
 h2 {
   font-size: 32px; }
@@ -115,6 +118,10 @@ section {
   background: url("../img/intro-overlay.png") no-repeat center center;
   background-size: cover;
   z-index: -3; }
+  @media (max-device-width: 720), (max-width: 720px) {
+    .intro-overlay {
+      background: none;
+      background-color: rgba(235, 241, 245, 0.8); } }
 
 .intro-accent {
   display: block;
@@ -125,6 +132,11 @@ section {
 .intro-box {
   display: none;
   margin-left: 10%; }
+  @media (max-device-width: 720), (max-width: 720px) {
+    .intro-box {
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center; } }
 
 .content {
   padding: 60px 10% 60px 10%;
