@@ -1,9 +1,6 @@
-# CodeKit files #
-#################
-
+# CodeKit files
 *.codekit
+.codekit-cache
 
-# Sass #
-########
-*.scss
+# Sass
 .sass-cache

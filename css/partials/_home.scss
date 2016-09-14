@@ -1,0 +1,97 @@
+// intro
+.intro {
+	height: 100%;
+	position: relative;
+	@include flex();
+	@include flex-align(center);
+	background: url('../img/intro-bg.jpg') no-repeat center center;
+	background-size: cover;
+	z-index: -5;
+}
+.intro-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../img/intro-overlay.png') no-repeat center center;
+	background-size: cover;
+	z-index: -3;
+}
+.intro-accent {
+	display: block;
+	padding-top: 5px;
+	margin-left: 3px;
+	color: $color-darker-grey;
+}
+.intro-box {
+	display: none;
+	margin-left: 10%;
+}
+// content
+.content {
+	padding: 60px 10% 60px 10%;
+	@include box-sizing(border-box);
+
+	.title {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.text p {
+		font-size: 18px;
+	}
+}
+
+// about
+.about {
+	background-color: $color-light-purple;
+
+	.text p {
+		color: $color-darker-grey;
+
+		a {
+			color: $color-dark-blue;
+
+			&:hover {
+				color: $color-light-blue;
+			}
+		}
+	}
+}
+
+// // projects
+// .projects {
+// 	background-color: $color-light-grey;
+
+// 	.palette {
+// 		width: 100%;
+// 		margin: 0 auto;
+// 		@include flex();
+// 		@include flex-justify-content(center);
+// 		@include flex-wrap(wrap);
+// 	}
+// 	.box {
+// 		width: 320px;
+// 		height: 320px;
+// 		margin: 5px;
+// 		background-color: white;
+// 	}
+// 	.box-img {
+// 		width: 320px;
+// 		height: 240px;
+// 		background-color: $color-light-blue;
+// 	}
+// 	.box-text {
+// 		width: 320px;
+// 		height: 80px;
+// 		padding: 10px;
+// 		@include box-sizing(border-box);
+
+// 		span {
+// 			font-size: 14px;
+// 			color: $color-darker-grey;
+// 		}
+// 	}
+// }

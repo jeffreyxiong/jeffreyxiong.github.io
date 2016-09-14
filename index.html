@@ -1,7 +1,6 @@
 <!--
 Website property of Jeffrey Xiong
-Created: 11/02/14
-Last Edit: 1/13/15
+5/09/16
 -->
 
 <!DOCTYPE html>
@@ -16,192 +15,75 @@ Last Edit: 1/13/15
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<meta name="author" content="Jeffrey Xiong">
 	<meta name="keywords" content="Jeffrey Xiong, developer, web, designer, photographer"
-	<meta name="description" content="I am a passionate developer and designer currently studying at Rice University. I learn fast, work hard, and laugh constantly.">
+	<meta name="description" content="I am a student at Rice University, and a developer, designer, and photographer. I work hard, laugh constantly, and sleep infrequently.">
 	<!-- stylish -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" media="(min-width: 720px)" href="css/normal.css">
-	<link rel="stylesheet" media="(max-width: 720px)" href="css/mobile.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
 </head>
 
+
 <body>
-	<!-- Navigation -->
-	<nav>
-		<div id="menu">
-			<a href="#"> <div class="inline" id="menu-logo">
-				<svg height="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-242 335.7 126 123.3" style="enable-background:new -242 335.7 126 123.3;" xml:space="preserve">
-					<style type="text/css">
-						.st0{fill:#26536E;}
-						.st1{fill:#FFFFFF;}
-					</style>
-					<rect x="-183.5" y="336.7" transform="matrix(0.7071 0.7071 -0.7071 0.7071 225.1819 240.5941)" class="st1" width="11.3" height="110.8"/>
-					<polygon class="st1" points="-183.5,442.6 -183.5,336.7 -180.8,336.7 -175.7,446 "/>
-				</svg>
-				<h3 class="inline" id="menu-logo-text">JEFFREY XIONG</h3>
-			</div></a>
-			<h3 class="inline menu-item"><a href="resume.pdf">Resume</a></h3>
-			<h3 class="inline menu-item projects-link"><a href="photos.html">Photography</a></h3>
-			<h3 class="inline menu-item projects-link"><a href="#projects">Work</a></h3>
-			<h3 class="inline menu-item about-link"><a href="#about">About</a></h3>
-			<img src="images/menu.svg" alt="Menu" id="menu-icon">
+	<!-- navigation -->
+	<!-- <nav>
+		<div class="menu">
+			<a href="doc/resume.pdf" class="nav-item"><span> Resume </span></a>
+			<a href="photos.html" class="nav-item"><span> Photography </span></a>
 		</div>
-	</nav>
-	<div class="nav-fix"></div>
-	<div class="expand">
-		<a href="#about" class="unexpand"><span> About </span></a>
-		<a href="#projects" class="unexpand"><span> Projects </span></a>
-		<a href="resume.pdf" class="unexpand"><span>Resume</span></a></h3>
+	</nav> -->
+
+	<!-- icon -->
+	<!-- <div id="nav-icon">
+		<svg id="nav-icon-svg" width="25px" height="25px" viewBox="947 45 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g stroke="none" fill="none" fill-rule="evenodd" transform="translate(947.000000, 45.000000)">
+		        <rect id="menu1" fill="#26335D" x="0" y="0" width="25" height="5"></rect>
+		        <rect id="menu2" fill="#26335D" x="0" y="8" width="20" height="5"></rect>
+		        <rect id="menu3" fill="#26335D" x="0" y="16" width="15" height="5"></rect>
+		    </g>
+		</svg>
+	</div> -->
+
+	<div id="nav-logo">
+		<svg width="25px" height="25px" viewBox="192 155 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(192.000000, 155.000000)">
+		        <polygon fill="#7C7E9F" points="3.8962 0.0005 18.3302 24.9995 24.1042 24.9995 9.6692 0.0005"></polygon>
+		        <polygon fill="#374576" points="18.3304 0.0005 3.8964 24.9995 9.6694 24.9995 24.1034 0.0005"></polygon>
+		        <polygon fill="#374576" points="0.0001 18.7942 0.0001 23.4132 2.3301 24.7582 8.8301 13.5002 4.5001 11.0002"></polygon>
+		    </g>
+		</svg>
 	</div>
-
-	<!-- Illustration -->
-	<section id="drwg" data-type="background"></section>
-	<div id="drwg-overlay">
-		<img id="o1" class="overlay" src="images/overlay-01.svg">
-		<img id="o2" class="overlay" src="images/overlay-02.svg">
-		<img id="o3" class="overlay" src="images/overlay-03.svg">
-		<img id="o4" class="overlay" src="images/overlay-04.svg">
-	</div>
-
-	<!-- Anchor -->
-	<div id="about"></div>
-
-	<!-- Hello -->
-	<section id="hello">
-		<div id="hello-title">	
-			<span class="title"> hello. </span>
-		</div>
-		<div id="hello-text">
-			<p> I am an undergraduate student at <b> Rice University </b>, and I currently study Computer Science. I am passionate about technology, programming, cognitive science, graphic design, and photography.</p>
-			<p> I work hard, laugh constantly, and sleep infrequently. </p>
-		</div>
-		<div id="hello"
-	</section>
-
-	<!-- Love -->
-	<!-- <section id="love">
-		<div id="love-title">
-			<span class="subtitle"> THIS IS WHAT I LOVE. </span>
-		</div>
-		<div class="flex box-a">
-			<a href="http://github.com/jeffreyxiong" title="Github Profile" id="love-code" class="love-box">
-				<div>
-					<img src="" class="love-img" width="300" height="200">
-					<div class="caption-text">
-						<p> I charm Python, drink Java, and objectify C. </p>
-					</div>
-				</div>
-			</a>
-			<a href="http://github.com/jeffreyxiong" title="Github Profile" id="love-design" class="love-box">
-				<div>
-					<img src="images/love-code.svg" class="love-img" width="300">
-					<div class="caption-text">
-						<p> I charm Python, drink Java, and objectify C. </p>
-					</div>
-				</div>
-			</a>
-			<a href="http://github.com/jeffreyxiong" title="Github Profile" id="love-photo" class="love-box">
-				<div>
-					<img src="" class="love-img" width="300" height="200">
-					<div class="caption-text">
-						<p> I charm Python, drink Java, and objectify C. </p>
-					</div>
-				</div>
-			</a> -->
-			<!-- <a href="design_portfolio.pdf" title="Design Portfolio">
-				<div id="love-design" class="love-box hover">
-					<img src="images/love-design.png" class="love-img" width="280" height="200">
-					<div class="caption">
-						<span class="caption-title"> GRAPHIC DESIGN </span>
-					</div>
-					<div class="caption-text">
-						<p><span>[Design Portfolio]</span><br>Colors, shapes, and words. Arranged prettily. </p>
-					</div>
-				</div>
-			</a>
-			<a href="https://www.flickr.com/photos/128633956@N08/" title="Flickr Photostream">
-				<div id="love-photo" class="love-box hover">
-					<img src="images/love-photo.png" class="love-img" width="280" height="200">
-					<div class="caption">
-						<span class="caption-title"> PHOTOGRAPHY </span>
-					</div>
-					<div class="caption-text">
-						<p><span>[Flickr Stream]</span><br>Cute animals, cool people, curious places. </p>
-					</div>
-				</div>
-			</a> -->
-	<!-- 	</div>
-	</section> -->
-
-	<!-- Anchor -->
-	<div id="projects"></div>
-
-	<!-- Resume -->
-<!-- 	<a href="resume.pdf" class="resume-a">
-	<section id="resume" class="unexpand">
-		<div class="work-title">
-			<span class="subtitle"> RESUME </span>
-		</div>
-	</section>
-	</a> -->
-
-	<!-- Work -->
-<!-- 	<section id="work" class="unexpand">
-		<div class="work-title">
-			<span class="subtitle"> COLLEGE PROJECTS </span>
-		</div>
-		<div class="work-subtitle">
-			<span class="subsubtitle"> 2014-2015 </span>
-		</div>
-		<div class="flex box-a">
-			<div class="work-box">
-				<a href="http://ricecrawlr.appspot.com"><img src="images/crawlr.png" class="work-img" width="400" height="250"></a>
-				<div class="caption-text">
-					<p><span>[Crawlr]</span> HackRice Team Project. Crawl/private party planning web app that implements Venmo to pay stop hosts, and Twilio to update invitees on location. </p>
-				</div>
-			</div>
-			<div class="work-box">
-				<a href="http://www.riceapps.org"><img src="images/riceapps.png" class="work-img" width="400" height="250"></a>
-				<div class="caption-text">
-					<p><span>[RiceApps]</span> RiceApps team website. Contributed front-end and UI design, and Python Flask / SQLite back-end.</p>
-				</div>
-			</div>
-			<div class="work-box">
-				<a href="http://themed-travel.appspot.com"><img src="images/viagem.png" class="work-img" width="400" height="250"></a>
-				<div class="caption-text">
-					<p><span>[Viagem]</span> HackTX Team Project. Theme-based travel web app that implements Google Places and Sendgrid API. Led front-end design using Bootstrap. </p>
-				</div>
-			</div>
-			<div class="work-box">
-				<a href="http://www.jeffreyxiong.me"><img src="images/portfolio.png" class="work-img" width="400" height="250"></a>
-				<div class="caption-text">
-					<p><span>[Portfolio]</span> Personal project to showcase my design, development, and other work.</p>
-				</div>
-			</div>
-		</div>
-		<div class="work-title">
-			<span class="subtitle"> HIGH SCHOOL PROJECTS </span>
-		</div>
-		<div class="flex box-a">
-			<div class="work-box">
-				<a href="http://www.ve-oasis.com"><img src="images/oasis.png" class="work-img" width="400" height="250"></a>
-				<div class="caption-text">
-					<p><span>[Oasis]</span> Designed and developed website to showcase virtual company Oasis, which sold rooftop gardens. Website garnered 1st place at Virtual Enterprise California State Trade Fair, and 3rd place at Virtual Enterprise International Trade Fair. </p>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- Footer -->
-	<footer>
-		<span class="end"> &copy; 2015 Jeffrey Xiong. </span>
-		<a href="https://www.facebook.com/profile.php?id=100000016908650" title="Facebook Profile" ><img class="inline footer-item" src="images/facebook.png" width="25" height="25"></a>
-		<a href="https://www.linkedin.com/in/jeffreyxiong/en" title="LinkedIn Profile"><img class="inline footer-item" src="images/linkedin.png" width="25" height="25"></a>
-		<a href="mailto:jx13@rice.edu" title="Email"><img class="inline footer-item" src="images/email.png" width="25" height="25"></a>
-	</footer>
 	
+	<!-- intro -->
+	<section class="intro">
+		<!-- intro box -->
+		<div class="intro-box">
+			<h1 class="title title-light"> Hi. </h1>
+			<h1 class="title title-dark"> I'm Jeffrey X. </h1>
+			<br>
+			<span class="accent accent-dark"> I like creating things and capturing moments. </span>
+		</div>
+		<!-- intro bg overlay -->
+		<div class="intro-overlay"></div>
+	</section>
+
+	<section class="about content">
+		<h3 class="title title-dark"> I work hard, laugh constantly, &amp; sleep infrequently </h3>
+		<br>
+		<div class="text">
+			<!-- <p> I work hard, laugh constantly, and sleep infrequently. </p> -->
+			<p> When not spilling coffee, I’m a web and mobile developer, designer, photographer, and spicy food enthusiast. In my spare time, you'll catch me doodling giraffes and spaceships, reading science fiction, or over-eagerly chasing and photographing squirrels. </p>
+			<p> I'm currently an undergraduate student at Rice University, pursuing a degree in Computer Science. But I also love dabbling in psychology, philosophy, and art. </p>
+			<p> Check out <a href="doc/resume.pdf">my resume</a>. </p>
+		</div>
+	</section>
+
 	<!-- scripted -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/vendor/snap.svg-min.js"></script>
 	<script src="js/scripts.js"></script>
+	<!-- Thank you developers of jQuery, and Snap.svg for your awesome libraries. -->
 
 </body>
+
 </html>

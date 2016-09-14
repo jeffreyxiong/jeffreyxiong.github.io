@@ -1,1 +1,0 @@
-$(function(){var t=$(".grid").isotope({itemSelector:".grid-item",layoutMode:"fitRows"});t.isotope({filter:".nature"}),t.isotope({filter:".people"}),t.isotope({filter:".places"}),t.isotope({filter:".misc"}),t.isotope({filter:"*"}),$("#menu-links").on("click",".filter-a",function(){var t=$(this).attr("data-filter")})});

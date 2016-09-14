@@ -1,0 +1,43 @@
+// base
+
+html, body {
+	height: 100%;
+}
+
+//// text
+h1, h2, h3, h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+h1 {
+	font-size: 52px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 24px;
+}
+span, p {
+	font-family: 'Quattrocento', serif;
+}
+.title-light {
+	color: $color-light-purple;
+}
+.title-dark {
+	color: $color-dark-blue;
+}
+.subtitle-light {
+	color: white;
+}
+.accent-dark {
+	color: $color-darker-grey;
+}
+.text {
+	text-align: justify;
+}
+
+//// sections
+section {
+	width: 100%;
+}

@@ -1,0 +1,29 @@
+#title {
+	width: 300px;
+	position: relative;
+	top: 10px;
+	left: 25px;
+
+	h3 {
+		font-weight: 400;
+	}
+	span {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+}
+.filter-menu {
+	
+}
+.menu-item {
+	display: block;
+}
+
+.grid {
+	width: 60%;
+}
+.grid-item {
+	width: 100%;
+	margin: 5px;
+	float: left;
+}

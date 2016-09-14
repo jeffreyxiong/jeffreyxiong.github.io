@@ -1,0 +1,1 @@
+$(function(){var n=0,e=Snap("#nav-menu-svg"),c=Snap("#love-icon-svg");$(".intro-box").fadeIn(1e3),e.click(function(){window.console&&console.log("Menu clicked. ",n),e.select("rect[width='16']").animate({width:"24"},500),e.select("rect[width='24']").animate({width:"16"},500),n=0==n?1:0})});

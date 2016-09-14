@@ -1,0 +1,46 @@
+// nav
+
+nav {
+	width: 100%;
+	height: 75px;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	@include flex();
+	@include flex-align(center);
+	@include flex-direction(row-reverse);
+	background-color: rgba(255, 255, 255, 0.8);
+
+	.menu {
+		margin-right: 75px;
+	}
+
+	a {
+		display: inline-block;
+		margin: 15px;
+
+		span {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			color: $color-dark-blue;
+			@include transition(0.25s, ease-in-out);
+		}
+
+		&:hover span {
+			color: $color-light-purple !important;
+		}
+	}
+}
+#nav-icon {
+	position: fixed;
+	top: 25px;
+	right: 25px;
+	cursor: pointer;
+}
+#nav-logo {
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	cursor: pointer;
+}

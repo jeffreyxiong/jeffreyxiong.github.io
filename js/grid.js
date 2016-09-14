@@ -1,10 +1,33 @@
+var architecture = "img/gallery/architecture/"
+var nature = "img/gallery/nature/"
+var oddsEnds = "img/gallery/oddsends/"
+var people = "img/gallery/people/"
+
+$.ajax({
+    url : architecture,
+    success: function (data) {
+        $(data).find("a").attr("href", function (i, val) {
+            if( val.match(/\.(jpe?g)$/) ) { 
+                $(".grid").append( "<img src='"+ architecture + val +"' class='grid-item architecture'>" );
+            } 
+        });
+    }
+});
+
+
+
+
+
 $(function () {
 
 	// initialize grid
 	var $grid = $('.grid').isotope({
 		// options
 		itemSelector: '.grid-item',
-		layoutMode: 'fitRows'
+		layoutMode: 'masonry',
+		masonry: {
+			columnWidth: 400
+		}
 	});
 
 
