@@ -148,16 +148,28 @@ section {
     margin: 0 auto;
     text-align: center; }
   .content .text p {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #282828; }
+    .content .text p a {
+      color: #26335D; }
+      .content .text p a:hover {
+        color: #9395B4; }
 
 .about {
-  background-color: #9395B4; }
-  .about .text p {
-    color: #282828; }
-    .about .text p a {
-      color: #26335D; }
-      .about .text p a:hover {
-        color: #E7EDF2; }
+  background-color: #C8CAE4; }
+
+.footer .text {
+  text-align: center; }
+  .footer .text p {
+    font-size: 14px; }
+
+.em-box {
+  border: #26335D 1px solid;
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 220px;
+  text-align: center; }
 
 nav {
   width: 100%;

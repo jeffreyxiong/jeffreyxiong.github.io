@@ -51,24 +51,45 @@
 
 	.text p {
 		font-size: 18px;
-	}
-}
 
-// about
-.about {
-	background-color: $color-light-purple;
-
-	.text p {
 		color: $color-darker-grey;
 
 		a {
 			color: $color-dark-blue;
 
 			&:hover {
-				color: $color-light-blue;
+				color: $color-light-purple;
 			}
 		}
 	}
+}
+
+// about
+.about {
+	background-color: $color-lighter-purple;
+}
+
+// footer
+.footer {
+	.text {
+		text-align: center;
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+.em-box {
+	border: $color-dark-blue 1px solid;
+	background-color: transparent;
+	// display: inline-block;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 220px;
+	// height: 150px;
+	text-align: center;
+	// padding: 15px;
 }
 
 // // projects
