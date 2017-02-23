@@ -1,6 +1,6 @@
 $(function () {
 
-	var categoryUrl = ["img/gallery/nature/", "img/gallery/architecture/", "img/gallery/oddsends/", "img/gallery/people/"];
+	var categoryUrl = ["http://www.jeffreyxiong.me/img/gallery/nature/", "http://www.jeffreyxiong.me/img/gallery/architecture/", "http://www.jeffreyxiong.me/img/gallery/oddsends/", "http://www.jeffreyxiong.me/img/gallery/people/"];
 	var categoryName = ["nature","architecture", "oddsends", "people"];
 	var categoryMap = {"nature": 0, "architecture": 1, "oddsends": 2, "people": 3};
 
