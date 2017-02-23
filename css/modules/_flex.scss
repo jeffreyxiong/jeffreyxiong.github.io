@@ -21,3 +21,8 @@
     -webkit-flex-direction: $property;
     flex-direction: $property;
 }
+
+@mixin flex-align-content($property) {
+    -webkit-align-content: $property;
+    align-content: $property;
+}

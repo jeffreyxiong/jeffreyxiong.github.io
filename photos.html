@@ -1,0 +1,105 @@
+<!--
+Website property of Jeffrey Xiong
+5/09/16
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title> Jeffrey Xiong </title>
+	<!-- so meta --> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="author" content="Jeffrey Xiong">
+	<meta name="keywords" content="Jeffrey Xiong, developer, web, designer, photographer"
+	<meta name="description" content="I am a student at Rice University, and a developer, designer, and photographer. I work hard, laugh constantly, and sleep infrequently.">
+	<!-- stylish -->
+	<link rel="stylesheet" href="css/photos.css">
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+	<!-- navigation -->
+	<nav class="hidden">
+		<div class="menu">
+			<a href="projects.html" class="nav-item"><span> Projects </span></a>
+			<a href="photos.html" class="nav-item"><span> Photography </span></a>
+		</div>
+	</nav>
+
+	<!-- icon -->
+	<div id="nav-icon">
+		<svg id="nav-icon-svg" width="25px" height="25px" viewBox="947 45 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g stroke="none" fill="none" fill-rule="evenodd" transform="translate(947.000000, 45.000000)">
+		        <rect id="menu1" fill="#26335D" x="0" y="0" width="25" height="5"></rect>
+		        <rect id="menu2" fill="#26335D" x="0" y="8" width="20" height="5"></rect>
+		        <rect id="menu3" fill="#26335D" x="0" y="16" width="15" height="5"></rect>
+		    </g>
+		</svg>
+	</div>
+
+	<div id="nav-logo">
+		<a href="index.html"><svg width="25px" height="25px" viewBox="192 155 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(192.000000, 155.000000)">
+		        <polygon fill="#7C7E9F" points="3.8962 0.0005 18.3302 24.9995 24.1042 24.9995 9.6692 0.0005"></polygon>
+		        <polygon fill="#374576" points="18.3304 0.0005 3.8964 24.9995 9.6694 24.9995 24.1034 0.0005"></polygon>
+		        <polygon fill="#374576" points="0.0001 18.7942 0.0001 23.4132 2.3301 24.7582 8.8301 13.5002 4.5001 11.0002"></polygon>
+		    </g>
+		</svg></a>
+	</div>
+
+	<!-- title -->
+	<div id="header">
+		<h1 class="title title-dark"> Photography </h1>
+	</div>
+
+	<div class="filter-buffer"></div>
+	
+	<!-- menu -->
+	<div class="filter-menu-wrap">
+		<div class="filter-menu">
+			<a href="#" class="filter-menu-item filter-selected" data-filter="all"> all </a>
+			<a href="#" class="filter-menu-item" data-filter="people"> people </a>
+			<a href="#" class="filter-menu-item" data-filter="nature"> nature </a>
+			<a href="#" class="filter-menu-item" data-filter="architecture"> architecture </a>
+			<a href="#" class="filter-menu-item" data-filter="oddsends"> odds &amp; ends </a>
+		</div>
+	</div>
+		
+	
+	<!-- photos -->
+	<div class="grid"></div>
+
+	<!-- load more -->
+	<a href="#">
+		<div id="load">
+			<div class="em-box">
+				<p> Load More Photos </p>
+			</div>
+		</div>
+	</a>
+
+	<section class="footer content">
+		<div class="text">
+			<p>Want to know more? </p>
+			<p><a href="https://www.linkedin.com/in/jeffreyxiong"> LinkedIn </a> &bull; <a href="https://github.com/jeffreyxiong"> GitHub</a> &bull; <a href="mailto:jeffrey.xiong@rice.edu"> Email </a> </p>
+			<br>
+			<p>&copy; 2017 Jeffrey Xiong</p>
+			
+		</div>
+	</section>
+
+	<!-- scripted -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/vendor/snap.svg-min.js"></script>
+	<script src="js/grid.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>

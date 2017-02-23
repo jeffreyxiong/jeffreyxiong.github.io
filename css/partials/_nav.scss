@@ -10,7 +10,7 @@ nav {
 	@include flex();
 	@include flex-align(center);
 	@include flex-direction(row-reverse);
-	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 4;
 
 	.menu {
 		margin-right: 75px;
@@ -37,10 +37,12 @@ nav {
 	top: 25px;
 	right: 25px;
 	cursor: pointer;
+	z-index: 5;
 }
 #nav-logo {
 	position: fixed;
 	top: 25px;
 	left: 25px;
 	cursor: pointer;
+	z-index: 5;
 }

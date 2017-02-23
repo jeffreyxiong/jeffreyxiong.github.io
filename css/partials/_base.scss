@@ -4,6 +4,11 @@ html, body {
 	height: 100%;
 }
 
+body {
+	margin: 0;
+	@include box-sizing(border-box);
+}
+
 //// text
 h1, h2, h3, h4 {
 	font-family: 'Montserrat', sans-serif;
@@ -40,7 +45,40 @@ span, p {
 	text-align: justify;
 }
 
+//// helpers
+.hidden {
+	display: none;
+}
+
 //// sections
 section {
 	width: 100%;
+}
+.content {
+	padding: 60px 10% 60px 10%;
+	@include box-sizing(border-box);
+
+	.text p {
+		font-size: 18px;
+
+		color: $color-darker-grey;
+
+		a {
+			color: $color-dark-blue;
+
+			&:hover {
+				color: $color-light-purple;
+			}
+		}
+	}
+}
+// footer
+.footer {
+	.text {
+		text-align: center;
+
+		p {
+			font-size: 14px;
+		}
+	}
 }

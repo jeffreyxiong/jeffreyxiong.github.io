@@ -1,29 +1,122 @@
-#title {
-	width: 300px;
-	position: relative;
-	top: 10px;
-	left: 25px;
+nav {
+	background-color: rgba(255, 255, 255, 0.8);
+}
 
-	h3 {
-		font-weight: 400;
-	}
-	span {
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 300;
-	}
+#header {
+	// position: fixed;
+	margin-top: 60px;
+	width: 100%;
+	text-align: center;
+	// border-bottom: 1px solid black;
 }
+
 .filter-menu {
-	
+	width: 500px;
+	margin: 60px auto;
+	@include flex();
+	@include flex-justify-content(space-around);
+	@include flex-align(center);
+
+	a {
+		font-family: 'Montserrat';
+		font-weight: 400;
+		color: $color-light-purple;
+		border: 2px solid;
+		border-color: white;
+		padding: 7px;
+		@include transition(0.5s, ease-out);
+
+		&:hover {
+			color: $color-accent-orange !important; 
+		}
+	}
 }
-.menu-item {
-	display: block;
+
+.filter-fixed {
+	width: 100%;
+	background-color: white;
+	// text-align: center;
+	position: fixed;
+	top: 0px;
+	z-index: 3;
+
+	div {
+		margin: 30px auto;
+	}
+}
+
+.filter-buffer {
+	// height: 120px;
+	display: none;
+	position: relative;
+	height: 157px;
+	// height: 1px;
+}
+
+.filter-selected {
+	border-color: $color-accent-orange !important;
+	color: $color-accent-orange !important;
 }
 
 .grid {
-	width: 60%;
+	@include flex();
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
+	margin: 0 auto;
+	// @include flex-justify-content(center);
+	// @include flex-align-content(center);
+	// @include flex-align(center);
+	width: 97%;
+	// height: 3000px;
+	z-index: 0;
 }
+
 .grid-item {
-	width: 100%;
+	-webkit-box-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+	width: 300px;
+	height: 300px;
 	margin: 5px;
-	float: left;
+	// float: left;
 }
+
+.grid-item:nth-of-type(4n) {
+	-webkit-flex-grow: 5;
+  	flex-grow: 5;
+  	-webkit-flex-shrink: 5;
+  	flex-shrink: 5;
+}
+// .grid-item:nth-of-type(7n) {
+// 	-webkit-flex-grow: 3;
+//   	flex-grow: 3;
+// }
+
+.em-box {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 150px;
+	border: 2px solid $color-dark-blue;
+	@include transition(0.5s, ease-out);
+
+	p {
+		text-align: center;
+		font-family: 'Montserrat';
+		font-size: 14px;
+		color: $color-dark-blue;
+		@include transition(0.5s, ease-out);
+	}
+
+	&:hover {
+		border-color: $color-accent-orange;
+
+		p {
+			color: $color-accent-orange;
+		}
+	}
+}
+
+// .grid-item img {
+// 	width: 100%;
+// 	height: auto;
+// }
