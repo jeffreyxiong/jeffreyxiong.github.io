@@ -1,0 +1,75 @@
+<!--
+Website property of Jeffrey Xiong
+5/09/16
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title> DFA Civic Participation Demo </title>
+	<!-- so meta --> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="author" content="Jeffrey Xiong">
+	<meta name="keywords" content="Jeffrey Xiong, developer, web, designer, photographer"
+	<meta name="description" content="I am a student at Rice University, and a developer, designer, and photographer. I work hard, laugh constantly, and sleep infrequently.">
+	<!-- stylish -->
+	<link rel="stylesheet" href="css/photos.css">
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
+</head>
+
+<body style="margin: 15px">
+	
+	<h2>Civic Party Survey</h2>
+
+	<br><br>
+
+	<form method="POST" id="survey" onsubmit="return false">
+		<br><label for="time">When do you have leisure time?</label> <br><br>
+		<input type="radio" name="time" value="0"> <span>Weekday Nights</span> <br>
+		<input type="radio" name="time" value="1"> <span>Weekend Nights</span> <br>
+		<input type="radio" name="time" value="2"> <span>Weekends</span> <br>
+		<br><label for="place">How do you get from place to place?</label> <br><br>
+		<input type="radio" name="place" value="0"> <span>Car</span> <br>
+		<input type="radio" name="place" value="1"> <span>Bike</span> <br>
+		<input type="radio" name="place" value="2"> <span>Public Transit</span> <br>
+		<br><label for="fun">What do you like to do for fun?</label> <br><br>
+		<input type="radio" name="fun" value="0"> <span>Going out for Drinks</span> <br>
+		<input type="radio" name="fun" value="1"> <span>Creative Projects</span> <br>
+		<input type="radio" name="fun" value="2"> <span>Staying In</span> <br>
+		<br><label for="age">What's your age group?</label> <br><br>
+		<input type="radio" name="age" value="0"> <span>Under 18</span> <br>
+		<input type="radio" name="age" value="1"> <span>18 - 24</span> <br>
+		<input type="radio" name="age" value="2"> <span>25 - 50</span> <br>
+		<input type="radio" name="age" value="3"> <span>Over 50</span> <br>
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		
+		$('#survey').submit(function() {
+			var data = $("#survey :input").serializeArray();
+			var time = data[0];
+			var place = data[1];
+			var fun = data[2];
+			var age = data[3];
+			console.log(age);
+
+			alert("Your result is: You should be active in your government!");
+
+		})
+
+	</script>
+	
+</body>
+
+
+</html>
