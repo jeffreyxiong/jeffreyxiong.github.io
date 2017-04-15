@@ -30,32 +30,29 @@ Website property of Jeffrey Xiong
 
 	<br> <br>
 
+	<div>
+		<p> The OCA is a national civil rights organization of community advocates dedicated to advancing the social, political, and economic well-being of Asian Pacific Americans. We offer a diverse array of programs and activities ranging from advocacy &amp; civic engagement, arts &amp; culture, education &amp; community building, economic empowerment, youth empowerment &amp; leadership, and special events! </p>
+		<p> Do you want to get involved but don’t know how? Take our “personalizer” quiz to find out which OCA activity or program fits your passion and lifestyle!</p>
+	</div>
+
 	<form method="POST" id="survey" onsubmit="return false">
-		<br> <label for="time">When do you have leisure time?</label> <br> <br>
-		<input type="radio" name="time" value="0"> <span>Often (Most nights)</span> <br>
-		<input type="radio" name="time" value="1"> <span>Sometimes (Weekends)</span> <br>
-		<input type="radio" name="time" value="2"> <span>Rarely (Couple times a month)</span> <br>
-
-		<br> <label for="place">What is your primary method of transportation?</label> <br> <br>
-		<input type="radio" name="place" value="0"> <span>Car</span> <br>
-		<input type="radio" name="place" value="1"> <span>Public Transit</span> <br>
-		<input type="radio" name="place" value="2"> <span>Bike</span> <br>
-		<input type="radio" name="place" value="3"> <span>Walking</span> <br>
-
-		<br> <label for="fun">How do you enjoy spending your leisure time?</label> <br> <br>
-		<input type="radio" name="fun" value="0"> <span>Spending time with new people</span> <br>
-		<input type="radio" name="fun" value="1"> <span>Reading (books, articles, etc)</span> <br>
-		<input type="radio" name="fun" value="2"> <span>Appreciating art (museums, films, etc.)</span> <br>
-		<input type="radio" name="fun" value="3"> <span>Exploring the city</span> <br>
-		<input type="radio" name="fun" value="4"> <span>Volunteering</span> <br>
-
-		<br> <label for="age">What's your age group?</label> <br> <br>
+		<br> <label for="age"> <b> 1. What's your age group? </b> </label> <br> <br>
 		<input type="radio" name="age" value="0"> <span>Under 18</span> <br>
 		<input type="radio" name="age" value="1"> <span>18 - 24</span> <br>
 		<input type="radio" name="age" value="2"> <span>25 - 50</span> <br>
 		<input type="radio" name="age" value="3"> <span>Over 50</span> <br>
 
-		<br> <label for="excited">What do you get excited about?</label> <br> <br>
+		<br> <label for="place"> <b> 2. What is your primary method of transportation around Houston? </b> </label> <br> <br>
+		<input type="radio" name="place" value="0"> <span>Car</span> <br>
+		<input type="radio" name="place" value="4"> <span>Carpool</span> <br>
+		<input type="radio" name="place" value="1"> <span>Public Transit</span> <br>
+		<input type="radio" name="place" value="2"> <span>Bike</span> <br>
+		<input type="radio" name="place" value="3"> <span>Walking</span> <br>
+	
+		<!-- ignites -->
+		<!-- passionate -->
+		<!-- excites -->
+		<br> <label for="excited"> <b> 3. What are you passionate about? </b> (Check all that apply) </label> <br> <br>
 		<input type="checkbox" name="excited" value="0"> <span>Activism</span> <br>
 		<input type="checkbox" name="excited" value="1"> <span>Art</span> <br>
 		<input type="checkbox" name="excited" value="2"> <span>Food</span> <br>
@@ -63,7 +60,19 @@ Website property of Jeffrey Xiong
 		<input type="checkbox" name="excited" value="4"> <span>Socializing</span> <br>
 		<input type="checkbox" name="excited" value="5"> <span>Volunteering</span> <br>
 
-		<br> <label for="motivate">What would motivate you to get involved?</label> <br> <br>
+		<br> <label for="fun"> <b> 4. How do you enjoy spending your leisure time? </b> </label> <br> <br>
+		<input type="radio" name="fun" value="0"> <span>Spending time with new people</span> <br>
+		<input type="radio" name="fun" value="1"> <span>Reading (books, articles, etc)</span> <br>
+		<input type="radio" name="fun" value="2"> <span>Appreciating art (museums, films, etc.)</span> <br>
+		<input type="radio" name="fun" value="3"> <span>Exploring the city</span> <br>
+		<input type="radio" name="fun" value="4"> <span>Volunteering</span> <br>
+
+		<br> <label for="time"> <b> 5. When do you have leisure time? </b> </label> <br> <br>
+		<input type="radio" name="time" value="0"> <span>Often (Most nights)</span> <br>
+		<input type="radio" name="time" value="1"> <span>Sometimes (Weekends)</span> <br>
+		<input type="radio" name="time" value="2"> <span>Rarely (Couple times a month)</span> <br>
+
+		<br> <label for="motivate"> <b> 6. What would motivate you to get involved? </b> </label> <br> <br>
 		<input type="checkbox" name="motivate" value="0"> <span>Family and friends</span> <br>
 		<input type="checkbox" name="motivate" value="1"> <span>Issues that relate to the local community</span> <br>
 		<input type="checkbox" name="motivate" value="2"> <span>Things that are fun, engaging, and social</span> <br>
@@ -87,35 +96,74 @@ Website property of Jeffrey Xiong
 		var causes = {"0":0, "1":0, "2":0, "3":0, "4":0}
 		$('#survey').submit(function() {
 			var data = $("#survey :input").serializeArray();
-			var time = data[0];
-			var place = data[1];
-			var fun = data[2];
-			var age = data[3];
+			var age = 0
+			var place = 0
 			var excited = [];
+			var fun = 0;
+			var time = 0;
 			var motivate = [];
-			for (var i = 4; i < data.length; i++) {
-				if (data[i].name === "excited") {
-					excited.push(data[i].value);
-				}
-				else {
-					motivate.push(data[i].value);
+
+			for (var i = 0; i < data.length; i++) {
+				switch(data[i].name) {
+					case "age":
+						age = data[i].value;
+						break;
+					case "place":
+						place = data[i].value;
+						break;
+					case "excited":
+						excited.push(data[i].value);
+						break;
+					case "fun":
+						fun = data[i].value;
+						break;
+					case "time":
+						time = data[i].value;
+					case "motivate":
+						motivate.push(data[i].value);
 				}
 			}
 
-			var timeResult = filterTime(time.value);
-			var placeResult = filterPlace(place.value);
-			var funResult = filterFun(fun.value);
-			var ageResult = filterAge(age.value);
+			var timeResult = filterTime(time);
+			var placeResult = filterPlace(place);
+			var funResult = filterFun(fun);
+			var ageResult = filterAge(age);
 			var excitedResult = filterExcited(excited);
 			var motivateResult = filterMotivate(motivate);
 
 			var i1 = new Set([...timeResult].filter(x => placeResult.has(x)));
 			var i2 = new Set([...i1].filter(x => ageResult.has(x)));
-			console.log(timeResult);
-			console.log(placeResult);
-			console.log(ageResult);
-			console.log(i1);
-			console.log(i2);
+			var result = new Set();
+
+			console.log(causes);
+
+			var fits = [];
+			var count = 0;
+			var max = 0;
+			for (var cause in causes) {
+				if (causes[cause] > max) {
+					count = 1;
+					max = causes[cause];
+					fits = [cause];
+
+				} else if (causes[cause] == max) {
+					count += 1;
+					fits.push(cause);
+				}
+			}
+			console.log(fits);
+
+			for (var i = 0; i < 2; i++) {
+				for (let prop of i2) {
+					console.log(prop);
+					if (event_data[prop].category == fits[i]) {
+						result.add(event_data[prop]);
+					}
+				}
+			}
+			
+
+			console.log(result);
 
 			alert("Your result is: You should be active in your government!");
 
@@ -124,49 +172,45 @@ Website property of Jeffrey Xiong
 		function filterTime(cond) {
 			var choice = new Set();
 			switch(cond) {
-				case 0:
-					for (var i = 0; i < event_data.length; i++) {
-						console.log(event_data.length);
-						console.log(event_data[i]);
-						choice.add(event_data[i]);
+				case "0":
+					for (var prop in event_data) {
+						choice.add(prop);
 					}
 					break;
-				case 1:
-					for (var i = 0; i < event_data.length; i++) {
-						if (event_data[i].time > 1) {
-							choice.add(event_data[i]);
+				case "1":
+					for (var prop in event_data) {
+						if (event_data[prop].time > 1) {
+							choice.add(prop);
 						}
 					}
 					break;
-				case 2:
-					for (var i = 0; i < event_data.length; i++) {
-						if (event_data[i].time > 2) {
-							choice.add(event_data[i]);
+				case "2":
+					for (var prop in event_data) {
+						if (event_data[prop].time > 2) {
+							choice.add(prop);
 						}
 					}
 					break;
 			}
-			console.log("why");
-			console.log(choice);
 			return choice;
 		}
 
 		function filterPlace(cond) {
 			var choice = new Set();
 			switch(cond) {
-				case 0:
-				case 1:
-					for (var i = 0; i < event_data.length; i++) {
-						if (event_data[i].physical > 0) {
-							choice.add(event_data[i]);
+				case "0":
+				case "1":
+					for (var prop in event_data) {
+						if (event_data[prop].physical > 0) {
+							choice.add(prop);
 						}
 					}
 					break;
-				case 2:
-				case 3:
-					for (var i = 0; i < event_data.length; i++) {
-						if (event_data[i].physical === 0) {
-							choice.add(event_data[i]);
+				case "2":
+				case "3":
+					for (var prop in event_data) {
+						if (event_data[prop].physical == 0) {
+							choice.add(prop);
 						}
 					}
 					break;
@@ -181,26 +225,26 @@ Website property of Jeffrey Xiong
 		function filterAge(cond) {
 			var choice = new Set();
 			switch(cond) {
-				case 0:
-					for (var i = 0; i < event_data.length; i++) {
-						if (event_data[i].age === 0) {
-							choice.add(event_data[i]);
+				case "0":
+					for (var prop in event_data) {
+						if (event_data[prop].age == 0) {
+							choice.add(prop);
 						}
 					}
 					break;
-				case 1:
-					for (var i = 0; i < event_data.length; i++) {
-						if (event_data[i].age <= 1) {
-							choice.add(event_data[i]);
+				case "1":
+					for (var prop in event_data) {
+						if (event_data[prop].age <= 1) {
+							choice.add(prop);
 						}
 					}
 					break;
 					
-				case 2:
-				case 3:
-					for (var i = 0; i < event_data.length; i++) {
-						if (event_data[i].age >= 1) {
-							choice.add(event_data[i]);
+				case "2":
+				case "3":
+					for (var prop in event_data) {
+						if (event_data[prop].age >= 1) {
+							choice.add(prop);
 						}
 					}
 					break;
@@ -212,20 +256,20 @@ Website property of Jeffrey Xiong
 			var choice = new Set();
 			for (var i = 0; i < cond.length; i++) {
 				switch(cond[i]) {
-					case 0:
+					case "0":
 						causes["0"]++;
 						causes["2"]++;
 						causes["4"]++;
 						break;
-					case 1:
-					case 2:
-					case 3:
+					case "1":
+					case "2":
+					case "3":
 						causes["1"]++;
 						break;
-					case 4:
+					case "4":
 						causes["3"]++;
 						break;
-					case 5:
+					case "5":
 						causes["0"]++;
 						causes["2"]++;
 						causes["4"]++;
