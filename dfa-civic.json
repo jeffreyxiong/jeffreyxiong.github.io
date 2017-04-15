@@ -1,0 +1,155 @@
+event_data = {
+
+	"Citizenship Forums": {
+		"desc": "Assistance preparing Citizenship applications for Legal Permanent Residents",
+		"location": "HOPE Clinic, 7001 Corporate Dr., #120 ",
+		"category": 0,
+		"time": 1,
+		"physical": 1,
+		"age": 1
+	},
+	"TEA Talks": {
+		"desc": "Discussion group to raise awareness about issues affecting the APA community",
+		"location": "Red Cross Building, 2700 Southwest Fwy",
+		"category": 0,
+		"time": 1,
+		"physical": 1,
+		"age": 0
+	},
+	"Civic Engagement Awareness": {
+		"desc": "Education on the importance of voting plus encouraging people to register and vote",
+		"location": "Varies with different volunteer activities ",
+		"category": 0,
+		"time": 2,
+		"physical": 1,
+		"age": 1
+	},
+	"Census Awareness": {
+		"desc": "TBA",
+		"location": "TBA",
+		"category": 0,
+		"time": 1,
+		"physical": 1,
+		"age": 1
+	},
+	"Big Bao Battle": {
+		"desc": "Fundraiser - 17 local chefs compete to make the best version of a traditional Chinese steamed bao ",
+		"location": "Ralph Smith Studios, 5226 Elm St",
+		"category": 1,
+		"time": 3,
+		"physical": 1,
+		"age": 0
+	},
+	"Houston AAPI Film Festival": {
+		"desc": "Film festival that celebrates AAPI stories told through film, music, and art",
+		"location": "Location TBA (but in Houston)",
+		"category": 1,
+		"time": 3,
+		"physical": 1,
+		"age": 0
+	},
+	"Community Festivals": {
+		"desc": "Various cultural festivals, such as Lantern Festival, Asia Festival, and Korean Festival",
+		"location": "Post HTX, 401 Franklin",
+		"category": 1,
+		"time": 3,
+		"physical": 1,
+		"age": 0
+	},
+	"Rice Paper": {
+		"desc": "Houston based magazine focused on local AAPI community and showcasing their work (art, photography writing), or their stories",
+		"location": "TBA",
+		"category": 1,
+		"time": 0,
+		"physical": 0,
+		"age": 0
+	},
+	"OCA Reads": {
+		"desc": "TBA",
+		"location": "TBA",
+		"category": 2,
+		"time": 1,
+		"physical": 1,
+		"age": 0
+	},
+	"OCA Serves": {
+		"desc": "TBA",
+		"location": "TBA",
+		"category": 2,
+		"time": 1,
+		"physical": 1,
+		"age": 0
+	},
+	"CARE Coalition July 4th Festival": {
+		"desc": "Free festival with food and activities, proceeds go to funding all school supplies for 1 HISD elementary school, hosted by CARE (coalition of non-profit Chinese-American organizations)",
+		"location": "Chinese Community Center, 9800 Town Park Dr., Houston, Texas 77036 ",
+		"category": 2,
+		"time": 3,
+		"physical": 1,
+		"age": 0
+	},
+	"Lunar New Year Festival": {
+		"desc": "TBA",
+		"location": "Chinese Community Center, 9800 Town Park Dr., Houston, Texas 77036 ",
+		"category": 2,
+		"time": 3,
+		"physical": 1,
+		"age": 0
+	},
+	"B3 Asian American Leadership Forum": {
+		"desc": "annual conference to develop leadership and advocacy skills for both college students, working professionals and entrepreneurs. personal development and skills workshops as well as industry specific career panels. ",
+		"location": "United Way CRC, 50 Waugh Dr.",
+		"category": 3,
+		"time": 3,
+		"physical": 1,
+		"age": 1
+	},
+	"HAAPI Hours": {
+		"desc": "Social Networking events for members, volunteers, and supporters to meet and network over food and refreshments in AAPI community, may have a featured guest speaker, an artist, art exhibit, or film screening. ",
+		"location": "Varying locations",
+		"category": 3,
+		"time": 2,
+		"physical": 1,
+		"age": 2
+	},
+	"MAAP (Mentoring Asian American Professionals)": {
+		"desc": "Annual mentoring program for young Asian American professionals",
+		"location": "TBA",
+		"category": 3,
+		"time": 2,
+		"physical": 1,
+		"age": 2
+	},
+	"Minority Business Certification": {
+		"desc": "Annual workshops on how to apply for Small, Minority, Women, Disadvantaged Business Enterprise Certifications in Houston",
+		"location": "TBA",
+		"category": 3,
+		"time": 3,
+		"physical": 1,
+		"age": 2
+	},
+	"Y Advocate": {
+		"desc": "Annual half day training focused on development of APA youth in our communities",
+		"location": "TBA",
+		"category": 4,
+		"time": 3,
+		"physical": 1,
+		"age": 0
+	},
+	"JA Company": {
+		"desc": "TBA",
+		"location": "Memorial City Mall (JA Tradefair)",
+		"category": 4,
+		"time": 1,
+		"physical": 1,
+		"age": 1
+	},
+	"OCA National Convention": {
+		"desc": "Convention with tracks and activities for people in high school through retirement; opportunity to learn about issues and attend workshops and seminars, and listen to notable keynote speakers",
+		"location": "Sacramento, CA",
+		"category": 2,
+		"time": 3,
+		"physical": 1,
+		"age": 1
+	}
+}

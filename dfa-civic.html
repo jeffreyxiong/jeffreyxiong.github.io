@@ -26,46 +26,217 @@ Website property of Jeffrey Xiong
 
 <body style="margin: 15px">
 	
-	<h2>Civic Party Survey</h2>
+	<h2>Civic Party Survey -- Get Involved with the OCA</h2>
 
-	<br><br>
+	<br> <br>
 
 	<form method="POST" id="survey" onsubmit="return false">
-		<br><label for="time">When do you have leisure time?</label> <br><br>
-		<input type="radio" name="time" value="0"> <span>Weekday Nights</span> <br>
-		<input type="radio" name="time" value="1"> <span>Weekend Nights</span> <br>
-		<input type="radio" name="time" value="2"> <span>Weekends</span> <br>
-		<br><label for="place">How do you get from place to place?</label> <br><br>
+		<br> <label for="time">When do you have leisure time?</label> <br> <br>
+		<input type="radio" name="time" value="0"> <span>Often (Most nights)</span> <br>
+		<input type="radio" name="time" value="1"> <span>Sometimes (Weekends)</span> <br>
+		<input type="radio" name="time" value="2"> <span>Rarely (Couple times a month)</span> <br>
+
+		<br> <label for="place">What is your primary method of transportation?</label> <br> <br>
 		<input type="radio" name="place" value="0"> <span>Car</span> <br>
-		<input type="radio" name="place" value="1"> <span>Bike</span> <br>
-		<input type="radio" name="place" value="2"> <span>Public Transit</span> <br>
-		<br><label for="fun">What do you like to do for fun?</label> <br><br>
-		<input type="radio" name="fun" value="0"> <span>Going out for Drinks</span> <br>
-		<input type="radio" name="fun" value="1"> <span>Creative Projects</span> <br>
-		<input type="radio" name="fun" value="2"> <span>Staying In</span> <br>
-		<br><label for="age">What's your age group?</label> <br><br>
+		<input type="radio" name="place" value="1"> <span>Public Transit</span> <br>
+		<input type="radio" name="place" value="2"> <span>Bike</span> <br>
+		<input type="radio" name="place" value="3"> <span>Walking</span> <br>
+
+		<br> <label for="fun">How do you enjoy spending your leisure time?</label> <br> <br>
+		<input type="radio" name="fun" value="0"> <span>Spending time with new people</span> <br>
+		<input type="radio" name="fun" value="1"> <span>Reading (books, articles, etc)</span> <br>
+		<input type="radio" name="fun" value="2"> <span>Appreciating art (museums, films, etc.)</span> <br>
+		<input type="radio" name="fun" value="3"> <span>Exploring the city</span> <br>
+		<input type="radio" name="fun" value="4"> <span>Volunteering</span> <br>
+
+		<br> <label for="age">What's your age group?</label> <br> <br>
 		<input type="radio" name="age" value="0"> <span>Under 18</span> <br>
 		<input type="radio" name="age" value="1"> <span>18 - 24</span> <br>
 		<input type="radio" name="age" value="2"> <span>25 - 50</span> <br>
 		<input type="radio" name="age" value="3"> <span>Over 50</span> <br>
-		<br><br>
+
+		<br> <label for="excited">What do you get excited about?</label> <br> <br>
+		<input type="checkbox" name="excited" value="0"> <span>Activism</span> <br>
+		<input type="checkbox" name="excited" value="1"> <span>Art</span> <br>
+		<input type="checkbox" name="excited" value="2"> <span>Food</span> <br>
+		<input type="checkbox" name="excited" value="3"> <span>Film</span> <br>
+		<input type="checkbox" name="excited" value="4"> <span>Socializing</span> <br>
+		<input type="checkbox" name="excited" value="5"> <span>Volunteering</span> <br>
+
+		<br> <label for="motivate">What would motivate you to get involved?</label> <br> <br>
+		<input type="checkbox" name="motivate" value="0"> <span>Family and friends</span> <br>
+		<input type="checkbox" name="motivate" value="1"> <span>Issues that relate to the local community</span> <br>
+		<input type="checkbox" name="motivate" value="2"> <span>Things that are fun, engaging, and social</span> <br>
+		<input type="checkbox" name="motivate" value="3"> <span>Things that are close to me/easy to access</span> <br>
+		<input type="checkbox" name="motivate" value="4"> <span>My friends getting involved</span> <br>
+		<input type="checkbox" name="motivate" value="5"> <span>When I have time to do things</span> <br>
+
+		<br> <br>
 		<input type="submit" value="Submit">
 	</form>
-	
+
+	<div id="result">
+		<p>
+			
+		</p>
+	</div>
+
+	<script src="dfa-civic.json"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>
-		
+		var causes = {"0":0, "1":0, "2":0, "3":0, "4":0}
 		$('#survey').submit(function() {
 			var data = $("#survey :input").serializeArray();
 			var time = data[0];
 			var place = data[1];
 			var fun = data[2];
 			var age = data[3];
-			console.log(age);
+			var excited = [];
+			var motivate = [];
+			for (var i = 4; i < data.length; i++) {
+				if (data[i].name === "excited") {
+					excited.push(data[i].value);
+				}
+				else {
+					motivate.push(data[i].value);
+				}
+			}
+
+			var timeResult = filterTime(time.value);
+			var placeResult = filterPlace(place.value);
+			var funResult = filterFun(fun.value);
+			var ageResult = filterAge(age.value);
+			var excitedResult = filterExcited(excited);
+			var motivateResult = filterMotivate(motivate);
+
+			var i1 = new Set([...timeResult].filter(x => placeResult.has(x)));
+			var i2 = new Set([...i1].filter(x => ageResult.has(x)));
+			console.log(timeResult);
+			console.log(placeResult);
+			console.log(ageResult);
+			console.log(i1);
+			console.log(i2);
 
 			alert("Your result is: You should be active in your government!");
 
-		})
+		});
+
+		function filterTime(cond) {
+			var choice = new Set();
+			switch(cond) {
+				case 0:
+					for (var i = 0; i < event_data.length; i++) {
+						console.log(event_data.length);
+						console.log(event_data[i]);
+						choice.add(event_data[i]);
+					}
+					break;
+				case 1:
+					for (var i = 0; i < event_data.length; i++) {
+						if (event_data[i].time > 1) {
+							choice.add(event_data[i]);
+						}
+					}
+					break;
+				case 2:
+					for (var i = 0; i < event_data.length; i++) {
+						if (event_data[i].time > 2) {
+							choice.add(event_data[i]);
+						}
+					}
+					break;
+			}
+			console.log("why");
+			console.log(choice);
+			return choice;
+		}
+
+		function filterPlace(cond) {
+			var choice = new Set();
+			switch(cond) {
+				case 0:
+				case 1:
+					for (var i = 0; i < event_data.length; i++) {
+						if (event_data[i].physical > 0) {
+							choice.add(event_data[i]);
+						}
+					}
+					break;
+				case 2:
+				case 3:
+					for (var i = 0; i < event_data.length; i++) {
+						if (event_data[i].physical === 0) {
+							choice.add(event_data[i]);
+						}
+					}
+					break;
+			}
+			return choice;
+		}
+
+		function filterFun(cond) {
+			return new Set();
+		}
+
+		function filterAge(cond) {
+			var choice = new Set();
+			switch(cond) {
+				case 0:
+					for (var i = 0; i < event_data.length; i++) {
+						if (event_data[i].age === 0) {
+							choice.add(event_data[i]);
+						}
+					}
+					break;
+				case 1:
+					for (var i = 0; i < event_data.length; i++) {
+						if (event_data[i].age <= 1) {
+							choice.add(event_data[i]);
+						}
+					}
+					break;
+					
+				case 2:
+				case 3:
+					for (var i = 0; i < event_data.length; i++) {
+						if (event_data[i].age >= 1) {
+							choice.add(event_data[i]);
+						}
+					}
+					break;
+			}
+			return choice;
+		}
+
+		function filterExcited(cond) {
+			var choice = new Set();
+			for (var i = 0; i < cond.length; i++) {
+				switch(cond[i]) {
+					case 0:
+						causes["0"]++;
+						causes["2"]++;
+						causes["4"]++;
+						break;
+					case 1:
+					case 2:
+					case 3:
+						causes["1"]++;
+						break;
+					case 4:
+						causes["3"]++;
+						break;
+					case 5:
+						causes["0"]++;
+						causes["2"]++;
+						causes["4"]++;
+						break;
+				}
+			}
+		}
+
+		function filterMotivate(cond) {
+			return new Set();
+		}
 
 	</script>
 	
