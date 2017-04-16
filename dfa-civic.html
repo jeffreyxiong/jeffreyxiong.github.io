@@ -83,12 +83,11 @@ Website property of Jeffrey Xiong
 		<br> <br>
 		<input type="submit" value="Submit">
 	</form>
-
-	<div id="result">
-		<p>
-			
-		</p>
+	
+	<br> <br>
+	<div id="result" style="display: none; border: 1px solid black; padding: 10px">
 	</div>
+	<br> <br>
 
 	<script src="dfa-civic.json"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -157,7 +156,7 @@ Website property of Jeffrey Xiong
 				for (let prop of i2) {
 					console.log(prop);
 					if (event_data[prop].category == fits[i]) {
-						result.add(event_data[prop]);
+						result.add([prop, event_data[prop]]);
 					}
 				}
 			}
@@ -165,7 +164,16 @@ Website property of Jeffrey Xiong
 
 			console.log(result);
 
-			alert("Your result is: You should be active in your government!");
+			$("#result").append("<h3> Your results are: </h3>");
+			var k = 1;
+			for (let item of result) {
+				$("#result").append("<p> " + k + ". " + item[0] + ": " + item[1].desc + " </p>");
+				$("#result").append("<p> " + item[1].location + " </p>");
+				$("#result").append("<p> ---------- </p>");
+				k += 1;
+			}
+
+			$("#result").show();
 
 		});
 
