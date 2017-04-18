@@ -1,0 +1,108 @@
+body, html{
+	margin: 0;
+  	padding: 0; 
+}
+
+h2 {
+	width: 420px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: 700; 
+  	color: #1f4980;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: 400; 
+}
+
+p {
+	font-family: 'Quattrocento Sans', sans-serif;
+	text-align: center;
+}
+
+.blue-em {
+	color: #1f4980;
+}
+
+.red-em {
+	color: #e30000;
+}
+
+form {
+	width: 100%;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: 400; 
+	font-size: 16px;
+	color: #1f4980;
+}
+
+input {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+span {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.question {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #c8f2ff;
+}
+
+#logo {
+	position: fixed;
+	top: 30px;
+	right: 2%;
+}
+
+#intro {
+	width: 60%;
+	margin: 0 auto;
+}
+
+#challenge {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#submit {
+	display: block;
+	width: 200px;
+	height: 100px;
+	padding: 25px 5px;
+	margin: 0 auto;
+	margin-top: 30px;
+	background: #e30000;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: 700; 
+  	font-size: 16px;
+	color: white;
+	border: 0;
+}
+
+#submit:hover {
+	background: #ad0000;
+}
+
+#result {
+	display: none;
+	width: 60%;
+	margin: 0 auto;
+	border: 3px solid #e30000;
+	border-radius: 5px;
+	padding: 10px;
+}

@@ -47,7 +47,7 @@ event_data = {
 	},
 	"Houston AAPI Film Festival": {
 		"desc": "Film festival that celebrates AAPI stories told through film, music, and art",
-		"location": "Location TBA (but in Houston)",
+		"location": "TBA",
 		"category": 1,
 		"time": 3,
 		"physical": 1,

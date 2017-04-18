@@ -17,70 +17,78 @@ Website property of Jeffrey Xiong
 	<meta name="keywords" content="Jeffrey Xiong, developer, web, designer, photographer"
 	<meta name="description" content="I am a student at Rice University, and a developer, designer, and photographer. I work hard, laugh constantly, and sleep infrequently.">
 	<!-- stylish -->
-	<link rel="stylesheet" href="css/photos.css">
+	<link rel="stylesheet" href="dfa-civic.css">
 	<!-- fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
 </head>
 
-<body style="margin: 15px">
+<body>
+	<!-- logo -->
+	<div id="logo">
+		<img src="oca.png" alt="OCA logo" width=100>
+	</div>
 	
 	<h2>How Should I Get Involved with OCA Greater Houston?</h2>
 
-	<br> <br>
-
-	<div>
-		<p> The OCA is a national civil rights organization of community advocates dedicated to advancing the social, political, and economic well-being of Asian Pacific Americans. We offer a diverse array of programs and activities ranging from advocacy &amp; civic engagement, arts &amp; culture, education &amp; community building, economic empowerment, youth empowerment &amp; leadership, and special events! </p>
-		<p> Do you want to get involved but don’t know how? Take our “personalizer” quiz to find out which OCA activity or program fits your passion and lifestyle!</p>
+	<div id="intro">
+		<p> <b> The OCA is a national civil rights organization of community advocates dedicated to advancing the social, political, and economic well-being of Asian Pacific Americans. </b> </p>
+		<p>We offer a diverse array of programs and activities involving <b class="blue-em">advocacy &amp; civic engagement, arts &amp; culture, education &amp; community building, economic empowerment, </b> and <b class="blue-em"> youth empowerment &amp; leadership</b>.</p>
+		<p id="challenge"> <b class="blue-em"> Do you want to get involved but don’t know how? </b> <br>  <b class="red-em"> Take our “personalizer” quiz to find out which OCA activity or program fits your passion and lifestyle! </b> </p>
 	</div>
 
 	<form method="POST" id="survey" onsubmit="return false">
-		<br> <label for="age"> <b> 1. My age group is: </b> </label> <br> <br>
-		<input type="radio" name="age" value="0"> <span>Under 18</span> <br>
-		<input type="radio" name="age" value="1"> <span>18 - 24</span> <br>
-		<input type="radio" name="age" value="2"> <span>25 - 50</span> <br>
-		<input type="radio" name="age" value="3"> <span>Over 50</span> <br>
+		<div class="question">
+			<label for="age">1. My age group is:  </label>
+			<input type="radio" name="age" value="0"> <span>Under 18</span> <br>
+			<input type="radio" name="age" value="1"> <span>18 - 24</span> <br>
+			<input type="radio" name="age" value="2"> <span>25 - 50</span> <br>
+			<input type="radio" name="age" value="3"> <span>Over 50</span> <br>
+		</div>
+		<div class="question">
+			<label for="place">2. My primary method of transportation around Houston is by: </label>
+			<input type="radio" name="place" value="0"> <span>Car</span> <br>
+			<input type="radio" name="place" value="1"> <span>Carpool/Rideshare</span> <br>
+			<input type="radio" name="place" value="2"> <span>Public Transit</span> <br>
+			<input type="radio" name="place" value="3"> <span>Bike</span> <br>
+			<input type="radio" name="place" value="4"> <span>Foot</span> <br>
+		</div>
+		<div class="question">
+			<label for="passion">3. I am passionate about: (Check all that apply) </label>
+			<input type="checkbox" name="passion" value="0"> <span>Politically involving and empowering myself and others </span> <br>
+			<input type="checkbox" name="passion" value="1"> <span>Increasing cultural awareness </span> <br>
+			<input type="checkbox" name="passion" value="2"> <span>Teaching and serving my community</span> <br>
+			<input type="checkbox" name="passion" value="3"> <span>Supporting local businesses</span> <br>
+			<input type="checkbox" name="passion" value="4"> <span>Mentoring the next generation</span> <br>
+		</div>
+		<div class="question">
+			<label for="fun">4. I enjoy spending my leisure time by: (Check all that apply) </label>
+			<input type="checkbox" name="fun" value="0"> <span>Spending time with new people</span> <br>
+			<input type="checkbox" name="fun" value="1"> <span>Reading (books, articles, etc)</span> <br>
+			<input type="checkbox" name="fun" value="2"> <span>Appreciating art (museums, films, etc.)</span> <br>
+			<input type="checkbox" name="fun" value="3"> <span>Exploring the city</span> <br>
+			<input type="checkbox" name="fun" value="4"> <span>Volunteering</span> <br>
+		</div>
+		<div class="question">
+			<label for="time">5. I am free: </label>
+			<input type="radio" name="time" value="0"> <span>Often (Most nights)</span> <br>
+			<input type="radio" name="time" value="1"> <span>Sometimes (Weekends)</span> <br>
+			<input type="radio" name="time" value="2"> <span>Rarely (Couple times a month)</span> <br>
+		</div>
+		<div class="question">
+			<label for="motivate">6. I would be motivated to get involved in OCA activities and programs if they: (Check all that apply) </label>
+			<input type="checkbox" name="motivate" value="0"> <span>Address issues that impact my family and friends </span> <br>
+			<input type="checkbox" name="motivate" value="1"> <span>Address local community issues that personally affect me</span> <br>
+			<input type="checkbox" name="motivate" value="2"> <span>Are fun and engaging</span> <br>
+			<input type="checkbox" name="motivate" value="3"> <span>Are easily accessible</span> <br>
+			<input type="checkbox" name="motivate" value="4"> <span>Fit in my schedule</span> <br>
+		</div>
 
-		<br> <label for="place"> <b> 2. My primary method of transportation around Houston is by: </b> </label> <br> <br>
-		<input type="radio" name="place" value="0"> <span>Car</span> <br>
-		<input type="radio" name="place" value="1"> <span>Carpool/Rideshare</span> <br>
-		<input type="radio" name="place" value="2"> <span>Public Transit</span> <br>
-		<input type="radio" name="place" value="3"> <span>Bike</span> <br>
-		<input type="radio" name="place" value="4"> <span>Foot</span> <br>
-	
-		<br> <label for="passion"> <b> 3. I am passionate about: </b> (Check all that apply) </label> <br> <br>
-		<input type="checkbox" name="passion" value="0"> <span>Politically involving and empowering myself and others </span> <br>
-		<input type="checkbox" name="passion" value="1"> <span>Increasing cultural awareness </span> <br>
-		<input type="checkbox" name="passion" value="2"> <span>Teaching and serving my community</span> <br>
-		<input type="checkbox" name="passion" value="3"> <span>Supporting local businesses</span> <br>
-		<input type="checkbox" name="passion" value="4"> <span>Mentoring the next generation</span> <br>
-
-		<br> <label for="fun"> <b> 4. I enjoy spending my leisure time by: </b> </label> <br> <br>
-		<input type="checkbox" name="fun" value="0"> <span>Spending time with new people</span> <br>
-		<input type="checkbox" name="fun" value="1"> <span>Reading (books, articles, etc)</span> <br>
-		<input type="checkbox" name="fun" value="2"> <span>Appreciating art (museums, films, etc.)</span> <br>
-		<input type="checkbox" name="fun" value="3"> <span>Exploring the city</span> <br>
-		<input type="checkbox" name="fun" value="4"> <span>Volunteering</span> <br>
-
-		<br> <label for="time"> <b> 5. I am free:</b> </label> <br> <br>
-		<input type="radio" name="time" value="0"> <span>Often (Most nights)</span> <br>
-		<input type="radio" name="time" value="1"> <span>Sometimes (Weekends)</span> <br>
-		<input type="radio" name="time" value="2"> <span>Rarely (Couple times a month)</span> <br>
-
-		<br> <label for="motivate"> <b> 6. I would be motivated to get involved in OCA activities and programs if they: </b> </label> <br> <br>
-		<input type="checkbox" name="motivate" value="0"> <span>Address issues that impact my family and friends </span> <br>
-		<input type="checkbox" name="motivate" value="1"> <span>Address local community issues that personally affect me</span> <br>
-		<input type="checkbox" name="motivate" value="2"> <span>Are fun and engaging</span> <br>
-		<input type="checkbox" name="motivate" value="3"> <span>Are easily accessible</span> <br>
-		<input type="checkbox" name="motivate" value="4"> <span>Fit in my schedule</span> <br>
-
-		<br> <br>
-		<input type="submit" value="Submit">
+		<input id="submit" type="submit" value="Find Out!">
 	</form>
 	
 	<br> <br>
-	<div id="result" style="display: none; border: 1px solid black; padding: 10px">
+	<div id="result">
 	</div>
 	<br> <br>
 
@@ -161,7 +169,7 @@ Website property of Jeffrey Xiong
 			console.log(result);
 
 			$("#result").empty();
-			$("#result").append("<h3> Your results are: </h3>");
+			$("#result").append("<h3> I should try: </h3>");
 			var k = 1;
 			for (let item of result) {
 				$("#result").append("<p> " + k + ". " + item[0] + ": " + item[1].desc + " </p>");
