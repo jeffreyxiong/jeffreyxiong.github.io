@@ -3,8 +3,11 @@ event_data = {
 	"Citizenship Forums": {
 		"desc": "Assistance preparing Citizenship applications for Legal Permanent Residents",
 		"location": "HOPE Clinic, 7001 Corporate Dr., #120 ",
+		"url": "http://ocahouston.org/programs/citizenship-forums",
+		"picture": "dfa/citizenship_forum.png",
 		"category": 0,
 		"time": 1,
+		"date": "",
 		"physical": 1,
 		"age": 1,
 		"motivator": [0, 3, 4]
@@ -12,8 +15,11 @@ event_data = {
 	"TEA Talks": {
 		"desc": "Discussion group to raise awareness about issues affecting the APA community",
 		"location": "Red Cross Building, 2700 Southwest Fwy",
+		"url": "http://ocahouston.org/programs/tea-talks",
+		"picture": "dfa/tea_talks.png",
 		"category": 0,
 		"time": 1,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [0, 1, 2, 3, 4]
@@ -21,8 +27,11 @@ event_data = {
 	"Civic Engagement Awareness": {
 		"desc": "Education on the importance of voting plus encouraging people to register and vote",
 		"location": "Varies with different volunteer activities ",
+		"url": "http://ocahouston.org/programs/civic-engagement",
+		"picture": "dfa/civic_engagement.png",
 		"category": 0,
 		"time": 2,
+		"date": "",
 		"physical": 1,
 		"age": 1,
 		"motivator": [0, 1, 2, 3, 4]
@@ -30,8 +39,11 @@ event_data = {
 	"Census Awareness": {
 		"desc": "TBA",
 		"location": "Location TBA",
+		"url": "http://ocahouston.org/programs/census-awareness",
+		"picture": "",
 		"category": 0,
 		"time": 1,
+		"date": "",
 		"physical": 1,
 		"age": 1,
 		"motivator": []
@@ -39,8 +51,11 @@ event_data = {
 	"Big Bao Battle": {
 		"desc": "Fundraiser - 17 local chefs compete to make the best version of a traditional Chinese steamed bao ",
 		"location": "Ralph Smith Studios, 5226 Elm St",
+		"url": "http://ocahouston.org/programs/big-bao-battle",
+		"picture": "dfa/big_bao.png",
 		"category": 1,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [0, 2, 3, 4]
@@ -48,8 +63,11 @@ event_data = {
 	"Houston AAPI Film Festival": {
 		"desc": "Film festival that celebrates AAPI stories told through film, music, and art",
 		"location": "TBA",
+		"url": "http://ocahouston.org/programs/haapiff",
+		"picture": "dfa/aapi_film.png",
 		"category": 1,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [2, 3, 4]
@@ -57,8 +75,11 @@ event_data = {
 	"Community Festivals": {
 		"desc": "Various cultural festivals, such as Lantern Festival, Asia Festival, and Korean Festival",
 		"location": "Post HTX, 401 Franklin",
+		"url": "http://ocahouston.org/programs/community-festivals",
+		"picture": "dfa/lantern_festival.png",
 		"category": 1,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [0, 1, 2, 3, 4]
@@ -66,8 +87,11 @@ event_data = {
 	"Rice Paper": {
 		"desc": "Houston based magazine focused on local AAPI community and showcasing their work (art, photography writing), or their stories",
 		"location": "Location TBA",
+		"url": "http://ocahouston.org/programs/rice-paper",
+		"picture": "dfa/rice_paper.png",
 		"category": 1,
 		"time": 0,
+		"date": "",
 		"physical": 0,
 		"age": 0,
 		"motivator": [0, 1, 2, 3, 4]
@@ -75,8 +99,11 @@ event_data = {
 	"OCA Reads": {
 		"desc": "TBA",
 		"location": "Location TBA",
+		"url": "http://ocahouston.org/programs/oca-reads",
+		"picture": "",
 		"category": 2,
 		"time": 1,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [0, 1, 2, 3, 4]
@@ -84,8 +111,11 @@ event_data = {
 	"OCA Serves": {
 		"desc": "TBA",
 		"location": "Location TBA",
+		"url": "http://ocahouston.org/programs/oca-serves",
+		"picture": "",
 		"category": 2,
 		"time": 1,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [0, 1, 2, 3, 4]
@@ -93,8 +123,11 @@ event_data = {
 	"CARE Coalition July 4th Festival": {
 		"desc": "Free festival with food and activities, proceeds go to funding all school supplies for 1 HISD elementary school, hosted by CARE (coalition of non-profit Chinese-American organizations)",
 		"location": "Chinese Community Center, 9800 Town Park Dr., Houston, Texas 77036 ",
+		"url": "http://ocahouston.org/programs/care-coalition",
+		"picture": "dfa/care.png",
 		"category": 2,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [2, 3, 4]
@@ -102,17 +135,23 @@ event_data = {
 	"Lunar New Year Festival": {
 		"desc": "TBA",
 		"location": "Chinese Community Center, 9800 Town Park Dr., Houston, Texas 77036 ",
+		"url": "http://ocahouston.org/programs/lunar-new-year-festival",
+		"picture": "",
 		"category": 2,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [2, 3, 4]
 	},
 	"B3 Asian American Leadership Forum": {
-		"desc": "annual conference to develop leadership and advocacy skills for both college students, working professionals and entrepreneurs. personal development and skills workshops as well as industry specific career panels. ",
+		"desc": "Annual conference to develop leadership and advocacy skills for both college students, working professionals and entrepreneurs. personal development and skills workshops as well as industry specific career panels. ",
 		"location": "United Way CRC, 50 Waugh Dr.",
+		"url": "http://ocahouston.org/programs/b3-asian-american-leadership-forum",
+		"picture": "",
 		"category": 3,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 1,
 		"motivator": [0, 2, 3, 4]
@@ -120,8 +159,11 @@ event_data = {
 	"HAAPI Hours": {
 		"desc": "Social Networking events for members, volunteers, and supporters to meet and network over food and refreshments in AAPI community, may have a featured guest speaker, an artist, art exhibit, or film screening. ",
 		"location": "Varying locations",
+		"url": "http://ocahouston.org/programs/haapi-hours",
+		"picture": "dfa/haapi.png",
 		"category": 3,
 		"time": 2,
+		"date": "",
 		"physical": 1,
 		"age": 2,
 		"motivator": [0, 1, 2, 3, 4]
@@ -129,8 +171,11 @@ event_data = {
 	"MAAP (Mentoring Asian American Professionals)": {
 		"desc": "Annual mentoring program for young Asian American professionals",
 		"location": "Location TBA",
+		"url": "http://ocahouston.org/programs/maap-mentoring-asian-american-professionals",
+		"picture": "dfa/maap.png",
 		"category": 3,
 		"time": 2,
+		"date": "",
 		"physical": 1,
 		"age": 2,
 		"motivator": [0, 1]
@@ -138,8 +183,11 @@ event_data = {
 	"Minority Business Certification": {
 		"desc": "Annual workshops on how to apply for Small, Minority, Women, Disadvantaged Business Enterprise Certifications in Houston",
 		"location": "Location TBA",
+		"url": "http://ocahouston.org/programs/minority-business-certification",
+		"picture": "",
 		"category": 3,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 2,
 		"motivator": [0, 1]
@@ -147,8 +195,11 @@ event_data = {
 	"Y Advocate": {
 		"desc": "Annual half day training focused on development of APA youth in our communities",
 		"location": "Location TBA",
+		"url": "http://ocahouston.org/programs/y-advocate",
+		"picture": "dfa/y_advocate.png",
 		"category": 4,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 0,
 		"motivator": [0, 1, 2]
@@ -156,8 +207,11 @@ event_data = {
 	"JA Company": {
 		"desc": "TBA",
 		"location": "Memorial City Mall (JA Tradefair)",
+		"url": "http://ocahouston.org/programs-ja-company-junior-achievement",
+		"picture": "dfa/ja_company.png",
 		"category": 4,
 		"time": 1,
+		"date": "",
 		"physical": 1,
 		"age": 1,
 		"motivator": [0, 1, 4]
@@ -165,8 +219,11 @@ event_data = {
 	"OCA National Convention": {
 		"desc": "Convention with tracks and activities for people in high school through retirement; opportunity to learn about issues and attend workshops and seminars, and listen to notable keynote speakers",
 		"location": "Sacramento, CA",
+		"url": "http://ocahouston.org/programs/oca-national-convention",
+		"picture": "dfa/national_convention.png",
 		"category": 2,
 		"time": 3,
+		"date": "",
 		"physical": 1,
 		"age": 1,
 		"motivator": [0, 1]

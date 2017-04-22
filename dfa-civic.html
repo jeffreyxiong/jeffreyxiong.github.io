@@ -32,32 +32,36 @@ Website property of Jeffrey Xiong
 	<h2>How Should I Get Involved with OCA Greater Houston?</h2>
 
 	<div id="intro">
-		<p> <b> The OCA is a national civil rights organization of community advocates dedicated to advancing the social, political, and economic well-being of Asian Pacific Americans. </b> </p>
+		<p> The OCA (Organization of Community Advocates) is a national civil rights organization of community advocates dedicated to advancing the social, political, and economic well-being of Asian Pacific Americans. </p>
 		<p>We offer a diverse array of programs and activities involving <b class="blue-em">advocacy &amp; civic engagement, arts &amp; culture, education &amp; community building, economic empowerment, </b> and <b class="blue-em"> youth empowerment &amp; leadership</b>.</p>
-		<p id="challenge"> <b class="blue-em"> Do you want to get involved but don’t know how? </b> <br>  <b class="red-em"> Take our “personalizer” quiz to find out which OCA activity or program fits your passion and lifestyle! </b> </p>
+		<p id="challenge"> <b> Do you want to get involved but don’t know how? </b> <br>  <b class="red-em"> Take our “personalizer” quiz to find out which OCA activity or program fits your passion and lifestyle! </b> </p>
 	</div>
 
 	<form method="POST" id="survey" onsubmit="return false">
 		<div class="question">
 			<label for="age">1. My age group is:  </label>
-			<input type="radio" name="age" value="0"> <span>Under 18</span> <br>
-			<input type="radio" name="age" value="1"> <span>18 - 24</span> <br>
-			<input type="radio" name="age" value="2"> <span>25 - 50</span> <br>
-			<input type="radio" name="age" value="3"> <span>Over 50</span> <br>
+			<input type="radio" name="age" value="0"> <span>0 - 10</span> <br>
+			<input type="radio" name="age" value="1"> <span>11 - 17</span> <br>
+			<input type="radio" name="age" value="2"> <span>18 - 20</span> <br>
+			<input type="radio" name="age" value="3"> <span>21 - 24</span> <br>
+			<input type="radio" name="age" value="4"> <span>25 - 30</span> <br>
+			<input type="radio" name="age" value="5"> <span>30 - 40</span> <br>
+			<input type="radio" name="age" value="6"> <span>50 - 60</span> <br>
+			<input type="radio" name="age" value="7"> <span>60+</span> <br>
 		</div>
 		<div class="question">
-			<label for="place">2. My primary method of transportation around Houston is by: </label>
-			<input type="radio" name="place" value="0"> <span>Car</span> <br>
-			<input type="radio" name="place" value="1"> <span>Carpool/Rideshare</span> <br>
-			<input type="radio" name="place" value="2"> <span>Public Transit</span> <br>
-			<input type="radio" name="place" value="3"> <span>Bike</span> <br>
-			<input type="radio" name="place" value="4"> <span>Foot</span> <br>
+			<label for="place">2. My main modes of transportation when traveling around Houston (outside of your immediate neighborhood, campus, etc.) are:  (Check all that apply) </label>
+			<input type="checkbox" name="place" value="0"> <span>Car</span> <br>
+			<input type="checkbox" name="place" value="1"> <span>Carpool/Rideshare</span> <br>
+			<input type="checkbox" name="place" value="2"> <span>Public Transit</span> <br>
+			<input type="checkbox" name="place" value="3"> <span>Bike</span> <br>
+			<input type="checkbox" name="place" value="4"> <span>Foot</span> <br>
 		</div>
 		<div class="question">
 			<label for="passion">3. I am passionate about: (Check all that apply) </label>
 			<input type="checkbox" name="passion" value="0"> <span>Politically involving and empowering myself and others </span> <br>
-			<input type="checkbox" name="passion" value="1"> <span>Increasing cultural awareness </span> <br>
-			<input type="checkbox" name="passion" value="2"> <span>Teaching and serving my community</span> <br>
+			<input type="checkbox" name="passion" value="1"> <span>Increasing artistic and or diverse cultural awareness for myself and others </span> <br>
+			<input type="checkbox" name="passion" value="2"> <span>Serving and volunteering in my community</span> <br>
 			<input type="checkbox" name="passion" value="3"> <span>Supporting local businesses</span> <br>
 			<input type="checkbox" name="passion" value="4"> <span>Mentoring the next generation</span> <br>
 		</div>
@@ -68,19 +72,20 @@ Website property of Jeffrey Xiong
 			<input type="checkbox" name="fun" value="2"> <span>Appreciating art (museums, films, etc.)</span> <br>
 			<input type="checkbox" name="fun" value="3"> <span>Exploring the city</span> <br>
 			<input type="checkbox" name="fun" value="4"> <span>Volunteering</span> <br>
+			<input type="checkbox" name="fun" value="5"> <span>Hanging out with friends</span> <br>
 		</div>
 		<div class="question">
-			<label for="time">5. I am free: </label>
-			<input type="radio" name="time" value="0"> <span>Often (Most nights)</span> <br>
-			<input type="radio" name="time" value="1"> <span>Sometimes (Weekends)</span> <br>
-			<input type="radio" name="time" value="2"> <span>Rarely (Couple times a month)</span> <br>
+			<label for="time">5. I would be available to volunteer my time: </label>
+			<input type="radio" name="time" value="0"> <span>Most weekdays and weekends</span> <br>
+			<input type="radio" name="time" value="1"> <span>Some weekdays and weekends</span> <br>
+			<input type="radio" name="time" value="2"> <span>Only some weekends</span> <br>
 		</div>
 		<div class="question">
-			<label for="motivate">6. I would be motivated to get involved in OCA activities and programs if they: (Check all that apply) </label>
+			<label for="motivate">6. Events I would participate in MUST: (Check all that apply) </label>
 			<input type="checkbox" name="motivate" value="0"> <span>Address issues that impact my family and friends </span> <br>
 			<input type="checkbox" name="motivate" value="1"> <span>Address local community issues that personally affect me</span> <br>
-			<input type="checkbox" name="motivate" value="2"> <span>Are fun and engaging</span> <br>
-			<input type="checkbox" name="motivate" value="3"> <span>Are easily accessible</span> <br>
+			<input type="checkbox" name="motivate" value="2"> <span>Be fun and engaging</span> <br>
+			<input type="checkbox" name="motivate" value="3"> <span>Be easily accessible</span> <br>
 			<input type="checkbox" name="motivate" value="4"> <span>Fit in my schedule</span> <br>
 		</div>
 
@@ -168,17 +173,30 @@ Website property of Jeffrey Xiong
 
 			console.log(result);
 
-			$("#result").empty();
-			$("#result").append("<h3> I should try: </h3>");
-			var k = 1;
-			for (let item of result) {
-				$("#result").append("<p> " + k + ". " + item[0] + ": " + item[1].desc + " </p>");
-				$("#result").append("<p> " + item[1].location + " </p>");
-				$("#result").append("<p> ---------- </p>");
-				k += 1;
+			if (result.size == 0) {
+				$("#result").empty();
+				$("#result").append("<p> Unfortunately, we couldn't find a match for you.</p>");
+				$("#result").append("<p> Check out OCA Houston's <a href='http://ocahouston.org'> website </a> for more information! </p>");
+			} else {
+				$("#result").empty();
+				$("#result").append("<h3> I should try: </h3>");
+				var k = 0;
+				for (let item of result) {
+					$("#result").append("<h2> <a href='" + item[1].url + "'>" + item[0] + "</a> </h2>");
+					$("#result").append("<div class='result-entry' id='result-entry-" + k + "'></div>");
+					if (item[1].picture != "") {
+						$("#result-entry-" + k).append("<img width='300px' src='" + item[1].picture + "'>");
+					}
+					$("#result-entry-" + k).append("<div class='result-text' id='result-text-" + k + "'></div>");
+					$("#result-text-" + k).append("<p> " + item[1].desc + "</p>");
+					$("#result-text-" + k).append("<p> Location: " + item[1].location + " </p>");
+					k++;
+				}
 			}
 
 			$("#result").show();
+			$("html, body").animate({ scrollTop: $('#result').offset().top}, 1000);
+			
 		});
 
 		function filterTime(cond) {
@@ -239,22 +257,25 @@ Website property of Jeffrey Xiong
 			var choice = new Set();
 			switch(cond) {
 				case "0":
+				case "1":
 					for (var prop in event_data) {
 						if (event_data[prop].age == 0) {
 							choice.add(prop);
 						}
 					}
 					break;
-				case "1":
+				case "2":
+				case "3":
 					for (var prop in event_data) {
 						if (event_data[prop].age <= 1) {
 							choice.add(prop);
 						}
 					}
 					break;
-					
-				case "2":
-				case "3":
+				case "4":
+				case "5":
+				case "6":
+				case "7":
 					for (var prop in event_data) {
 						if (event_data[prop].age >= 0) {
 							choice.add(prop);

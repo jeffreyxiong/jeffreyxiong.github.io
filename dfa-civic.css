@@ -74,6 +74,10 @@ span {
 	margin: 0 auto;
 }
 
+#intro p {
+	font-size: 18px;
+}
+
 #challenge {
 	width: 80%;
 	margin: 0 auto;
@@ -105,4 +109,37 @@ span {
 	border: 3px solid #e30000;
 	border-radius: 5px;
 	padding: 10px;
+	position: relative;
+}
+
+#result a {
+	text-decoration: none;
+	color: #1f4980;
+}
+
+#result a:hover {
+	color: #c8f2ff;
+}
+
+#result img {
+	width: 55%;
+	margin: 5px;
+	/*display: inline-block;*/
+}
+
+.result-entry {
+	display: -webkit-flex; /* Safari */
+  	display: flex;
+  	-webkit-justify-content: center; /* Safari */
+ 	justify-content: center;
+ 	-webkit-align-items: flex-start; /* Safari */
+  	align-items: flex-start;
+}
+
+.result-text {
+	width: 40%;
+	display: inline-block;
+	margin: 5px;
+	/*position: relative;*/
+	/*top: 5px;*/
 }
